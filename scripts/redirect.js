@@ -5,8 +5,10 @@ const routes = {
   "/setup-guide": "https://docs.google.com/document/d/1ICTviuLTaWu3RAIikdzkonuhgsJ9p40NtgwiqUi_Zxg/edit?usp=drivesdk"
 };
 
-const path = "/" + location.pathname.split("/").pop().toLowerCase();
-
+let path = "/" + location.pathname.split("/").pop();
+path = path.toLowerCase();
 if (routes[path]) {
   location.replace(routes[path]);
+} else {
+  console.log(path);
 }
