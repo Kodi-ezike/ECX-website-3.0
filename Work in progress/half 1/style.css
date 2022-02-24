@@ -60,7 +60,10 @@ html, body {
 }
 
 /* edit or add your styles below */
+header.hero {
+    background: url(assets/images/hero.png) no-repeat;
+}
 section {
     border: 1px solid red;
     height: 400px;
- }
+}
