@@ -164,8 +164,30 @@ CALLING FONTS FROM THE ASSETS FOLDER (fontface)
     font-size: 21px;
     margin-right: 12px;
   }
-  .hl {
-    mix-blend-mode: normal;
+  @media screen and (max-width: 1090px) {
+    .hl {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1120px) and (min-width: 1071px) {
+    body > header.hero > nav > ul {
+      width: 66%;
+    }
+  }
+  @media screen and (max-width: 1070px) and (min-width: 1046px) {
+    body > header.hero > nav > ul {
+      width: 68%;
+    }
+  }
+  @media screen and (max-width: 1045px) and (min-width: 1021px) {
+    body > header.hero > nav > ul {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 1020px) and (min-width: 1001px) {
+    body > header.hero > nav > ul {
+      width: 72%;
+    }
   }
   @media screen and (max-width: 1000px) and (min-width: 900px) {
     .hl {
@@ -173,7 +195,7 @@ CALLING FONTS FROM THE ASSETS FOLDER (fontface)
     }
     body > header.hero > nav {
       width: 92%;
-      margin: 5% 4% 0 4%;
+      margin: 4% 4% 0 4%;
     }
     body > header.hero > nav > ul {
       width: 65%;
@@ -193,19 +215,142 @@ CALLING FONTS FROM THE ASSETS FOLDER (fontface)
       margin-bottom: 26px;
     }
   }
-  @media screen and (max-width: 899px) and (min-width: 800px) {
-  
+  @media screen and (max-width: 1300px) {
+    body > header.hero > nav {
+      margin-top: 3%;
+    }
+  }
+  @media screen and (max-width: 899px) and (min-width: 601px) {
+    .hl {
+      display: none;
+    }
+    body > header.hero {
+      background: url(assets/images/hero.png) 0 0 no-repeat;
+      background-size: cover;
+      padding-top: 52px;
+      height: 880px;
+    }
+    body > header.hero > nav {
+      width: 100%;
+      align-items: center;
+      margin: 0;
+      padding: 0 12%;
+    }
+    body > header.hero > nav > div.logo {
+      margin: 0 0 0 15px;
+      display: flex;
+      align-items: center;
+      padding-top: 3px;
+    }
+    body > header.hero > nav > div.mobile-menu {
+      display: flex;
+    }
+    body > header.hero > nav > ul {
+      display: none;
+    }
+    body > header.hero > #hero-sect #hero-txt {
+      width: 550px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    body > header.hero > #hero-sect #hero-txt h1 {
+      padding: 0;
+      line-height: 70px;
+      font-size: 57px;
+      width: 515px;
+      margin: 40px 0 10px 0;
+    }
+    body > header.hero > #hero-sect #hero-txt p {
+      margin: 1.6% 5% 28% 5%;
+      font-family: "Inter-400";
+      line-height: 25px;
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 600px) and (min-width: 429px) {
+    .hl {
+      display: none;
+    }
+    body > header.hero {
+      background: url(assets/images/hero-mb.png) 0 0 no-repeat;
+      background-size: cover;
+      padding-top: 52px;
+      height: 775px;
+    }
+    body > header.hero > nav {
+      width: 100%;
+      align-items: center;
+      margin: 0;
+      padding: 0 8%;
+    }
+    body > header.hero > nav > div.logo {
+      margin: 0 0 0 15px;
+      display: flex;
+      align-items: center;
+      padding-top: 3px;
+    }
+    body > header.hero > nav > div.mobile-menu {
+      display: flex;
+    }
+    body > header.hero > nav > ul {
+      display: none;
+    }
+    body > header.hero > #hero-sect #hero-txt {
+      width: 420px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    body > header.hero > #hero-sect #hero-txt h1 {
+      padding: 0;
+      line-height: 60px;
+      font-size: 42px;
+      width: 380px;
+      margin: 40px 0 10px 0;
+    }
+    body > header.hero > #hero-sect #hero-txt p {
+      margin: 1.6% 5% 30% 5%;
+      font-family: "Inter-400";
+      line-height: 25px;
+      font-size: 16px;
+    }
+    body > header.hero > #hero-sect #hero-txt button {
+      width: 65%;
+      height: 64px;
+      background: #3269F9;
+      box-shadow: 0px 18px 35px rgba(62, 132, 248, 0.23);
+      border-radius: 8px;
+      border: none;
+    }
+    body > header.hero > #hero-sect #hero-txt button i {
+      font-style: normal;
+      font-family: "Nunito-400";
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 20px;
+      margin-right: 12px;
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    body > header.hero > nav {
+      margin-top: 5%;
+    }
   }
   @media screen and (max-width: 428px) {
     .hl {
       display: none;
     }
-    body {
-      border: 1px solid red;
-    }
     body > header.hero {
       background: url(assets/images/hero-mb.png) 0 0 no-repeat;
       padding-top: 52px;
+      height: 775px;
     }
     body > header.hero > nav {
       width: 100%;
@@ -236,7 +381,6 @@ CALLING FONTS FROM THE ASSETS FOLDER (fontface)
       margin-top: 44.8%;
     }
     body > header.hero > #hero-sect #hero-txt {
-      width: 750px;
       color: #ffffff;
       display: flex;
       flex-direction: column;
@@ -249,30 +393,67 @@ CALLING FONTS FROM THE ASSETS FOLDER (fontface)
       font-size: 252%;
       width: 100%;
       padding: 0 3.5% 0 2%;
-      border: 1px solid red;
     }
     body > header.hero > #hero-sect #hero-txt p {
-      margin: 1.6% 0 8% 0;
+      margin: 1.6% 5% 27% 5%;
       font-family: "Inter-400";
       line-height: 25px;
       font-size: 16px;
     }
+    @media screen and (max-width: 400px) {
+      body > header.hero > nav {
+        width: 100%;
+        padding: 0 10%;
+      }
+      body > header.hero > nav > div.logo {
+        margin: 0;
+      }
+      body > header.hero > #hero-sect #hero-txt h1 {
+        line-height: 120%;
+        font-size: 215%;
+        width: 100%;
+        padding: 0 5% 0 5%;
+        margin-bottom: 15px;
+      }
+    }
     body > header.hero > #hero-sect #hero-txt button {
-      width: 273px;
+      width: 65%;
       height: 64px;
-      box-shadow: 0px 18px 35px 0px #3e84f83b;
-      border: 2px solid #ffffff;
-      filter: drop-shadow(0px 18px 35px rgba(62, 132, 248, 0.23));
+      background: #3269F9;
+      box-shadow: 0px 18px 35px rgba(62, 132, 248, 0.23);
       border-radius: 8px;
-      background: transparent;
+      border: none;
     }
     body > header.hero > #hero-sect #hero-txt button i {
       font-style: normal;
       font-family: "Nunito-400";
       color: #ffffff;
-      font-size: 21px;
+      font-size: 18px;
+      line-height: 20px;
       margin-right: 12px;
     }
+  }
+  @media screen and (max-width: 280px) {
+    body > header.hero {
+      padding-top: 45px;
+      height: 720px;
+    }
+    body > header.hero > #hero-sect {
+      margin-top: 45%;
+    }
+    body > header.hero > #hero-sect #hero-txt h1 {
+      font-size: 24px;
+    }
+  }
+  @media screen and (max-width: 250px) {
+    body {
+      display:none;
+    }
+  }
+  #hero-line {
+    position: absolute;
+    top: 22%;
+    left: 15%;
   }
   #hero-line {
     position: absolute;
@@ -536,7 +717,7 @@ CALLING FONTS FROM THE ASSETS FOLDER (fontface)
     width: auto;
   }
   section#what-we-do > article.list-of-what-we-do > div {
-    width: 400px;
+    width: 360px;
     height: 545px;
     display: flex;
   flex-direction: column;
