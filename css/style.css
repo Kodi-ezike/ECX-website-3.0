@@ -1,6 +1,13 @@
-@import "base.css";
+@import "base.css";  /* calling the css file with the font and basic styles */
+/*
 
-/* edit or add your styles below */
+
+
+HEADER SECTION
+
+
+
+*/
 body > header.hero {
   height: 901px;
   position: relative;
@@ -380,7 +387,7 @@ body > header.hero > #hero-sect #hero-txt button i {
         }
       }
     }
-}
+  }
   body > header.hero > #hero-sect #hero-txt button {
     width: 65%;
     height: 64px;
@@ -408,21 +415,25 @@ body > header.hero > #hero-sect #hero-txt button i {
   top: 22%;
   left: 15%;
 }
-
 /* 
 
 
-  ABOUT US 
+
+  ABOUT US SECTION
+ 
   
   
 */
-
 body > #about-us {
   background: rgba(62, 132, 248, 0.06);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+/*
+  ABOUT SECTION ARTICLE 1:
+  contains the header and paragraph of the about page
+*/
 body > #about-us article:nth-child(1) {
   width: 52%;
   padding: 8.5% 0 6% 0;
@@ -518,9 +529,10 @@ body > #about-us article:nth-child(1) p {
     }
   }
 }
-
-
-
+/*
+  ABOUT SECTION ARTICLE 2:
+  contains the four cards(rectangular boxes) of the about page
+*/
 body > #about-us article:nth-child(2) {
   display: flex;
   margin: 0 0 150px 0;
@@ -584,7 +596,10 @@ body
   img.about-sect-line:nth-last-child(1) {
   left: 100%;
 }
-
+/*
+  ABOUT SECTION ARTICLE 3:
+  contains the three cards(square boxes with svg images) of the about page
+ */
 body > #about-us > article:nth-child(3) {
   width: 100%;
   font-family: "Nunito-700";
@@ -622,7 +637,6 @@ body > #about-us > article:nth-child(3) > div:nth-last-child(2) {
     flex-direction: column-reverse;
   }
 }
-/*border: 1px solid blue;*/
 @media screen and (min-width: 429px) {
   body > #about-us article:nth-child(3) {
     position: relative;
@@ -699,8 +713,15 @@ body > #about-us > article:nth-child(3) > div:nth-last-child(2) {
     z-index: 2;
   }
 }
+/*
 
-/* WHAT WE DO SECTION */
+
+
+WHAT WE DO SECTION
+
+
+
+*/
 
 #what-we-do {
   background: transparent;
