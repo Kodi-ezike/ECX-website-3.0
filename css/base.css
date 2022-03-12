@@ -54,6 +54,8 @@ CALLING FONTS FROM THE ../ASSETS FOLDER (fontface)
     border: none;
     outline: none;
     box-sizing: border-box;
+    font-style: normal;
+    text-decoration: none;
 }
 html,
 body {
