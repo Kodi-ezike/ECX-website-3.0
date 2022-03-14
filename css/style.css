@@ -426,6 +426,7 @@ body > header.hero > #hero-sect #hero-txt button i {
 body > #about-us {
   background: rgba(62, 132, 248, 0.06);
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
 }
@@ -433,11 +434,12 @@ body > #about-us {
   ABOUT SECTION ARTICLE 1:
   contains the header and paragraph of the about page
 */
-body > #about-us article:nth-child(1) {
+body > #about-us > article:nth-child(1) {
   width: 52%;
-  padding: 8.5% 0 6% 0;
+  /*padding: 8.5% 0 6% 0;*/
+  padding: 10.8% 0 6% 0;
 }
-body > #about-us article:nth-child(1) h2 {
+body > #about-us > article:nth-child(1) h2 {
   font-family: "Satoshi-900";
   font-size: 48px;
   line-height: 67px;
@@ -445,7 +447,7 @@ body > #about-us article:nth-child(1) h2 {
   text-align: center;
   color: #3e3934;
 }
-body > #about-us article:nth-child(1) p {
+body > #about-us > article:nth-child(1) p {
   font-family: "Inter-400";
   font-size: 21px;
   line-height: 31px;
@@ -537,7 +539,7 @@ body > #about-us article:nth-child(1) p {
     display: flex;
     row-gap: 15px;
     column-gap: 2px;
-    margin: 0 0 10% 0;
+    margin: 0 0 13% 0;
     padding: 0 4%;
     width: 100%;
   }
@@ -791,24 +793,16 @@ body > #about-us > article:nth-child(3) > div:nth-last-child(2) {
     width: calc((573 / 1440) * 100vw);
     height: calc((573 / 1440) * 100vw);
   }
-  body > #about-us article:nth-child(3) > div img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: auto;
-  }
   body > #about-us article:nth-child(3) > div#resp-our-philosophy {
     top: 0px;
     right: 15vw;
     mix-blend-mode: multiply;
+    text-align: center;
   }
   body > #about-us article:nth-child(3) > div#resp-our-philosophy img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 90%;
+    width: 60%;
     height: auto;
+    border: 1px solid red;
   }
   body > #about-us article:nth-child(3) > div#resp-our-vision {
     top: 13vw;
@@ -819,8 +813,8 @@ body > #about-us > article:nth-child(3) > div:nth-last-child(2) {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc((536 / 1440) * 100vw);
-    height: calc((536 / 1440) * 100vw);
+    width: calc((536 / 1440) * 100%);
+    height: calc((536 / 1440) * 100%);
   }
   body > #about-us article:nth-child(3) > div#dsktp-our-mission {
     top: 30vw;
