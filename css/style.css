@@ -1174,13 +1174,14 @@ body > section#gallery > article:nth-child(1) h2 {
   line-height: 67px;
   text-align: center;
   color: #000000;
+  margin-bottom: 2%;
 }
 body > section#gallery > article:nth-child(1) div.gallery-img-ctrl {
   position: absolute;
   top: 0;
-  right: 10%;
+  right: 9%;
   display: flex;
-  width: 200px;
+  width: 14%;
   justify-content: space-between;
 }
 body > section#gallery > article:nth-child(1) p {
@@ -1191,7 +1192,7 @@ body > section#gallery > article:nth-child(1) p {
   text-align: center;
   color: #000000;
 }
-body > section#gallery > article.image-container {
+body > section#gallery > article#image-container {
   height: 451px;
   margin-left: 7%;
   display: flex;
@@ -1209,10 +1210,11 @@ body > section#gallery > article:nth-child(3) {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 2% 5%;
+  padding: 1.5% 5%;
   background: #3269f9;
   box-shadow: 0px 18px 35px rgba(62, 132, 248, 0.23);
   border-radius: 8px;
+  cursor: pointer;
 }
 .btn i {
   font-family: "Nunito-400";
