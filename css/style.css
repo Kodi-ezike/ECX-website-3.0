@@ -1,4 +1,4 @@
-@import "base.css";  /* calling the css file with the font and basic styles */
+@import "base.css"; /* calling the css file with the font and basic styles */
 /*
 
 
@@ -539,14 +539,14 @@ body > #about-us > article:nth-child(1) p {
   contains the four cards(rectangular boxes) of the about page
 */
 
-  body > #about-us article:nth-child(2) {
-    display: flex;
-    row-gap: 15px;
-    column-gap: 2px;
-    margin: 0 0 13% 0;
-    padding: 0 4%;
-    width: 100%;
-  }
+body > #about-us article:nth-child(2) {
+  display: flex;
+  row-gap: 15px;
+  column-gap: 2px;
+  margin: 0 0 13% 0;
+  padding: 0 4%;
+  width: 100%;
+}
 @media screen and (min-width: 769px) {
   body > #about-us article:nth-child(2) {
     flex-wrap: wrap;
@@ -762,7 +762,7 @@ body > #about-us > article:nth-child(3) > div#mb-our-mission {
   background: #ef4239;
 }
 body > #about-us > article:nth-child(3) > div h3 {
-  color: #FFF;
+  color: #fff;
   font-family: "Nunito-700";
 }
 body > #about-us > .about-section-dots {
@@ -773,11 +773,14 @@ body > #about-us > .about-section-dots {
 }
 body > #about-us > .about-section-dots > div {
   padding: 7px;
-  background-image: linear-gradient(to right, #474747 10%, rgba(255, 255, 255, 0) 0%);
+  background-image: linear-gradient(
+    to right,
+    #474747 10%,
+    rgba(255, 255, 255, 0) 0%
+  );
   background-position: top;
   background-size: 4.5% 2.06px;
   background-repeat: repeat-x;
-
 }
 @media screen and (max-width: 1310px) {
   body > #about-us > .about-section-dots {
@@ -823,8 +826,8 @@ body > #about-us > .about-section-dots > div {
   }
   body > #about-us article:nth-child(3) > div#resp-our-philosophy img {
     width: 82%;
-    top: 50%;  
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
   body > #about-us article:nth-child(3) > div#resp-our-vision > h3 {
@@ -876,9 +879,9 @@ body > #about-us > .about-section-dots > div {
   }
   body > #about-us article:nth-child(3) > img.torus {
     position: absolute;
-    top: .6%;
+    top: 0.6%;
     left: 29%;
-    width: calc((159/1440)*100%);
+    width: calc((159 / 1440) * 100%);
     height: auto;
   }
   body > #about-us article:nth-child(3) > div {
@@ -955,7 +958,7 @@ body > #about-us > .about-section-dots > div {
     @media screen and (max-width: 768px) {
       body > #about-us article:nth-child(3) > img.torus {
         left: 28%;
-        width: calc((165/1440)*100%);
+        width: calc((165 / 1440) * 100%);
       }
       body > #about-us article:nth-child(3) > div h3 {
         font-size: 16px;
@@ -1061,7 +1064,7 @@ body > section#what-we-do > article.list-of-what-we-do > div h3 {
   margin: 32px 0;
   font-size: 24px;
   line-height: 32px;
-  color: #3E3934;
+  color: #3e3934;
   font-family: "Satoshi-700";
 }
 body > section#what-we-do > article.list-of-what-we-do > div ul {
@@ -1082,15 +1085,31 @@ body > section#what-we-do > article.list-of-what-we-do > div button {
   margin: 32px 0;
   border-radius: 8px;
 }
-body > section#what-we-do > article.list-of-what-we-do > div:nth-child(1) button,
+body
+  > section#what-we-do
+  > article.list-of-what-we-do
+  > div:nth-child(1)
+  button,
 section#what-we-do > article.list-of-what-we-do > div:nth-child(5) button {
   background: #3e84f8;
 }
-body > section#what-we-do > article.list-of-what-we-do > div:nth-child(2) button,
-body > section#what-we-do > article.list-of-what-we-do > div:nth-child(4) button {
+body
+  > section#what-we-do
+  > article.list-of-what-we-do
+  > div:nth-child(2)
+  button,
+body
+  > section#what-we-do
+  > article.list-of-what-we-do
+  > div:nth-child(4)
+  button {
   background: #ffbd08;
 }
-body > section#what-we-do > article.list-of-what-we-do > div:nth-child(3) button {
+body
+  > section#what-we-do
+  > article.list-of-what-we-do
+  > div:nth-child(3)
+  button {
   background: #ed4239;
 }
 body > section#what-we-do > article.list-of-what-we-do > div > button i {
@@ -1136,145 +1155,155 @@ GALLERY SECTION
 
 
 */
-.gallery {
-  border: 1rem;
-  height: 700px;
+body > section#gallery {
+  align-items: center;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 9% 0 5% 0;
+}
+body > section#gallery > article:nth-child(1) {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body > section#gallery > article:nth-child(1) h2 {
+  font-family: "Satoshi-900";
+  font-size: 48px;
+  line-height: 67px;
   text-align: center;
-  padding: -2px;
+  color: #000000;
 }
-.topic-and-arrows{
-  font-family: Nunito-700;
-
-}
-.gallery p{
-  font-family: Nunito-600;
-
-}
-.prev,
-.next {
-  padding: 16px;
-  margin-top: -50px;
-  margin-right: -420px;
-  margin-left: 450px;
-  border-radius: 70%;
-  width: 75px;   
-}
-
-/* On hover, add a background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(197, 189, 189, 0.692);
-}
-
-.mySlides-fade {
-  float: right;
-  width: 31%;
-  padding-top: 100px;
-  right: 50%;
-
-}
-#img-2 {
-  margin-right: -2%;
-}
-#pik{
-  margin-right: -5%;
-  
-}
-.col-1{
-  margin-top: 240px;
-}
-
-.btn{
+body > section#gallery > article:nth-child(1) div.gallery-img-ctrl {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  display: flex;
   width: 200px;
-  border: 0;
-  height: 47px;
-  font-family: Roboto , sans-serif;
-  padding: 12px 10px;
-  outline:none;
-  color: white;
-  background: rgb(55, 114, 241);
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 18px;
-  transition: width 0.5s ease;
-  box-shadow: 0px 8px 25px  rgb(106, 176, 199);
+  justify-content: space-between;
+}
+body > section#gallery > article:nth-child(1) p {
+  width: 700px;
+  font-size: 21px;
+  line-height: 32px;
+  font-family: "Nunito-400";
+  text-align: center;
+  color: #000000;
+}
+body > section#gallery > article.image-container {
+  height: 451px;
+  margin-left: 7%;
+  display: flex;
+  column-gap: 25px;
+  overflow: hidden;
+  margin-top: 9%;
+  margin-bottom: 8%;
+}
+body > section#gallery > article:nth-child(3) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2% 5%;
+  background: #3269f9;
+  box-shadow: 0px 18px 35px rgba(62, 132, 248, 0.23);
+  border-radius: 8px;
+}
+.btn i {
+  font-family: "Nunito-400";
+  font-size: 21px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-right: 8px;
+}
+.btn img {
+  width: 16px;
 }
 
-.btn img{
-  width: 20px;
-  image-resolution: highest;
-  margin-left: 5%;
-  margin-bottom: 1%;
-}
-
-.col-1{
+.col-1 {
   position: absolute;
   padding-top: 22%;
   left: 45%;
 }
 .col-1::after {
-  content: '';
+  content: "";
   width: 10px;
   height: 57%;
   position: absolute;
   left: -40px;
   top: 8px;
 }
+/*
 
-#our-achievements{
+
+
+OUR TEAM SECTION
+
+
+
+*/
+/*
+
+
+
+OUR ACHIEVEMENT SECTION
+
+
+
+*/
+#our-achievements {
   padding-top: 100px;
   align-items: center;
   text-align: center;
   padding: -2px;
 }
-.achieve{
-  background-image: url(assets/images/ourAchievementBackgroundImage.png) ;
+.achieve {
+  background-image: url(assets/images/ourAchievementBackgroundImage.png);
   background-size: contain;
   height: 610px;
-
 }
 
-.achieve ::after{
+.achieve ::after {
   content: "";
   display: table;
   clear: both;
   height: 1px;
 }
-.boxes{
-  display: flex; 
+.boxes {
+  display: flex;
   flex-wrap: wrap !important;
-  justify-content:center;
+  justify-content: center;
   box-shadow: 40% rgba(197, 189, 189, 0.692);
 }
-.ach{
+.ach {
   width: 16%;
   margin-top: 394px;
   text-align: center;
   border-radius: 17px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
-  cursor:pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
   transition: all 0.4s ease;
-
-
-  
 }
-.ach img{
+.ach img {
   border-radius: 10px 10px 0px 0px;
   border-left-style: none;
 }
-.topic{
+.topic {
   text-decoration: solid;
   font-size: 120%;
   font-family: Nunito-600;
 }
-.val{
+.val {
   font-size: 70px;
   font-family: Poppins-600;
 }
 
-
-.btn-2{
+.btn-2 {
   width: 230px;
   height: 47px;
   border: 0;
@@ -1288,46 +1317,43 @@ GALLERY SECTION
   transition: width 0.5s ease;
   text-align: center;
   margin-bottom: 12px;
-  box-shadow: 0px 8px 25px  rgb(106, 176, 199);
+  box-shadow: 0px 8px 25px rgb(106, 176, 199);
 }
-.btn-2 img{
+.btn-2 img {
   width: 18px;
   image-resolution: highest;
   margin-left: 5%;
   margin-bottom: 1%;
 }
 
-#contact{
+#contact {
   margin-top: 400px;
   align-items: left;
   text-align: left;
   padding: -2px;
   top: 650px;
 }
-.tact{
+.tact {
   text-align: center;
-  background-color: #f0f8ff;    
+  background-color: #f0f8ff;
 }
-.tact h2{
+.tact h2 {
   font-family: Satoshi-Bold;
   font-size: 30px;
 }
-.tact p{
+.tact p {
   font-family: Nunito-600;
-
 }
-.form{
+.form {
   margin-top: 150px;
-  
 }
-.add{
+.add {
   align-items: left;
-  padding-left:60%;
+  padding-left: 60%;
   margin-top: -41%;
   font-family: Nunito-500;
-
 }
-#name{
+#name {
   height: 60px;
   padding-left: 15px;
   position: absolute;
@@ -1335,9 +1361,8 @@ GALLERY SECTION
   padding-top: 5px;
   width: 250px;
   font-family: Nunito-600;
-
 }
-#email{
+#email {
   height: 60px;
   padding-left: 20px;
   position: absolute;
@@ -1345,9 +1370,8 @@ GALLERY SECTION
   padding-top: 5px;
   width: 250px;
   font-family: Nunito-600;
-
 }
-#message{
+#message {
   height: 290px;
   margin-left: -480px;
   position: absolute;
@@ -1356,85 +1380,91 @@ GALLERY SECTION
   padding-top: 16px;
   padding-left: 15px;
   font-family: Nunito-600;
-  
 }
-footer{
+/*
+
+
+
+OUR FOOTER SECTION
+
+
+
+*/
+footer {
   margin-top: 290px;
   background-color: #f0f8ff;
 }
 
-.list{
+.list {
   position: relative;
   display: flex;
 }
 
-.list li{
+.list li {
   list-style: none;
-  margin:0 40px;
+  margin: 0 40px;
   text-decoration: none;
 }
-footer .list a{
+footer .list a {
   font-size: 18px;
   font-weight: 500;
   color: black;
-  padding:6px 0;
+  padding: 6px 0;
   transition: all 0.4s ease;
   text-decoration: none;
 }
-footer .list a:hover{
-  color:rgb(106, 176, 199);
+footer .list a:hover {
+  color: rgb(106, 176, 199);
 }
 
-#foot-logo{
+#foot-logo {
   margin-left: 79px;
   margin-right: 64px;
 }
 
-#socials{
+#socials {
   align-items: center;
   display: flex;
   width: 90%;
   margin-top: 1%;
   background-color: #f0f8ff;
-
-
 }
-
-#socials img{
+#socials img {
   border-radius: 50%;
-  color:#f0f8ff;
+  color: #f0f8ff;
   width: 8%;
-  margin-left: 2%;    
+  margin-left: 2%;
   padding: 5px;
   image-rendering: pixelated;
   image-resolution: highest;
   background-color: white;
-
 }
-#foot{
+#foot {
   background-color: f0f8ff;
   padding-top: 20%;
 }
-#icons{
+#icons {
   background-color: #f0f8ff;
   margin: 4% 12% 0% 42%;
 }
-#copyright{
+#copyright {
   margin: 0% 12% 0% -6%;
-
 }
 /* @media (max-width:1190px){
   section{
     width:85%;
   }
 } */
+/*
 
 
 
+REMOVE ELEMENTS NOT STYLED WELL
 
 
 
-
-body > div#verti, body > section#gallery, #our-achievements, #contact-form {
+*/
+#our-achievements,
+#contact-form {
   display: none;
 }
