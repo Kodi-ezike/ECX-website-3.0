@@ -1159,7 +1159,7 @@ body > section#gallery {
   align-items: center;
   width: 100%;
   background: #FFFFFF;
-  padding: 9% 0 5% 0;
+  padding: 9% 0 12% 0;
 }
 body > section#gallery > article:nth-child(1) {
   width: 100%;
@@ -1309,6 +1309,98 @@ OUR TEAM SECTION
 
 
 */
+body > section#teams {
+  width: 100%;
+  padding: 3% 0 28% 0;
+  overflow: hidden;
+}
+body > section#teams article {
+  width: 100%;
+}
+body > section#teams article.image-panel {
+  display: flex;
+  column-gap: 0;
+  margin-bottom: 4.5%;
+  padding: 0 9%;
+  overflow-x: auto;
+}
+body > section#teams article.image-panel::-webkit-scrollbar {
+  display: none;
+}
+body > section#teams article.image-panel > div {
+  width: 240px;
+  height: 373px;
+  padding: 21px 26px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+  flex: 0 0 240px;
+}
+body > section#teams article.image-panel > div div.round-top-rectangle {
+  width: 51px;
+  height: 8px;
+  background: #E5E5E5;
+  border-radius: 24px;
+  margin: 0 auto 21px auto;
+}
+body > section#teams article.image-panel > div div:nth-child(2) {
+  position: relative;
+}
+body > section#teams article.image-panel > div div > img {
+  width: 100%;
+  height: auto;
+}
+body > section#teams article.image-panel > div div > div.team-mbr-no {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33%;
+  height: 134.5%;
+  mix-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "DM-Sans-500";
+  font-size: 48px;
+  color: #FFFFFF;
+}
+body > section#teams article.image-panel:nth-child(1) > div:nth-child(1) div > div.team-mbr-no,
+body > section#teams article.image-panel:nth-child(1) > div:nth-child(4) div > div.team-mbr-no,
+body > section#teams article.image-panel:nth-child(2) > div:nth-child(3) div > div.team-mbr-no {
+  background: #FFBD08;
+}
+body > section#teams article.image-panel:nth-child(1) > div:nth-child(2) div > div.team-mbr-no,
+body > section#teams article.image-panel:nth-child(2) > div:nth-child(1) div > div.team-mbr-no,
+body > section#teams article.image-panel:nth-child(2) > div:nth-child(4) div > div.team-mbr-no {
+  background: #3E84F8;
+}
+body > section#teams article.image-panel:nth-child(1) > div:nth-child(3) div > div.team-mbr-no,
+body > section#teams article.image-panel:nth-child(1) > div:nth-child(5) div > div.team-mbr-no,
+body > section#teams article.image-panel:nth-child(2) > div:nth-child(2) div > div.team-mbr-no,
+body > section#teams article.image-panel:nth-child(2) > div:nth-child(5) div > div.team-mbr-no {
+  background: #EF4239;
+}
+body > section#teams article.image-panel > div > div.team-mbr-txt {
+  margin-top: 44%;
+  text-align: left;
+}
+body > section#teams article.image-panel > div > div.team-mbr-txt h2 {
+  font-family: "Satoshi-700";
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+body > section#teams article.image-panel > div > div.team-mbr-txt h3 {
+  font-family: "Nunito-600";
+  font-size: 12px;
+  line-height: 20px;
+  color: #B6B6B6;
+  margin: 2px 0px;
+}
+body > section#teams article:nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
 /*
 
 
