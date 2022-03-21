@@ -1646,16 +1646,3 @@ footer .list a:hover{
     width:85%;
   }
 } */
-/*
-
-
-
-REMOVE ELEMENTS NOT STYLED WELL
-
-
-
-*/
-#our-achievements,
-#contact-form {
-  display: none;
-}
