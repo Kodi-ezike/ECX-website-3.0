@@ -1462,8 +1462,7 @@ OUR ACHIEVEMENT SECTION
 */
 body > #our-achievements {
   width: 100%;
-  height: auto;
-  padding: 8% 0 0 0;
+  padding: 8% 0 10% 0;
   background: #fff;
   align-items: center;
   text-align: center;
@@ -1503,7 +1502,6 @@ body > #our-achievements > #ach-cont {
   flex-wrap: wrap;
   justify-content: center;
   box-shadow: 40% rgba(197, 189, 189, 0.692);
-  height: 504px;
   margin-top: -240px;
   padding-left: 4%;
   padding-right: 4%;
@@ -1548,7 +1546,7 @@ body > #our-achievements > #ach-cont div.ach div > span {
 }
 @media screen and (max-width: 768px) {
   body > #our-achievements {
-    padding: 11% 0 50% 0;
+    padding: 11% 0 15% 0;
   }
   body > #our-achievements > article:nth-child(1) {
     margin-bottom: 8%;
@@ -1571,7 +1569,7 @@ body > #our-achievements > #ach-cont div.ach div > span {
   }
   @media screen and (max-width: 428px) {
     body > #our-achievements {
-      padding: 15% 0 0 0;
+      padding: 15% 0 22% 0;
     }
     body > #our-achievements > article:nth-child(1) {
       margin-bottom: 8%;
@@ -1601,12 +1599,7 @@ body > #our-achievements > #ach-cont div.ach div > span {
     height: 648px;
   }
   body > #our-achievements > div#ach-cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-top: -178px;
-    box-shadow: 40% rgba(197, 189, 189, 0.692);
-    height: 504px;
   }
   body > #our-achievements > div#ach-cont div.ach {
     width: 178px;
@@ -1637,95 +1630,316 @@ CONTACT US SECTION
 
 
 */
-#contact, footer {display: none;}
-#contact {
-  margin-top: 400px;
-  align-items: left;
-  text-align: left;
-  padding: -2px;
-  top: 650px;
+body > section#contact {
+  width: 100%;
+  padding: 8% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.tact {
+body > section#contact > article:nth-child(1) {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6%;
+}
+body > section#contact > article:nth-child(1) > h2 {
+  font-family: "Satoshi-900";
+  font-size: 48px;
+  line-height: 67px;
+  color: #3E3934;
+  margin: 0 0 16px 0;
+}
+body > section#contact > article:nth-child(1) > p {
+  font-family: "Nunito-400";
+  font-size: 21px;
+  line-height: 32px;
   text-align: center;
-  background-color: #f0f8ff;
+  color: #000000;
 }
-.tact h2 {
-  font-family: Satoshi-900;
-  font-size: 35px;
-  color: rgb(66, 64, 64);
+body > section#contact > article:nth-child(2) {
+  width: 73%;
+  margin: 0 13.5%;
+  display: flex;
+  align-items: flex-start;
 }
-.tact p {
-  font-family: Nunito-600;
+body > section#contact > article:nth-child(2) > form {
+  width: 65%;
+  font-family: "Nunito-600";
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
 }
-.form {
-  margin-top: 150px;
+body > section#contact > article:nth-child(2) > form > div { width: 100%; }
+body > section#contact > article:nth-child(2) > form > div:nth-child(1) {
+  padding-left: 1%;
+  display: flex;
+  justify-content: space-between;
 }
-.add {
-  align-items: left;
-  padding-left: 60%;
-  margin-top: -41%;
+body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input,
+body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input::placeholder,
+body > section#contact > article:nth-child(2) > form > textarea
+ {
+  background: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+  color: #686767;
+  font-family: "Nunito-400";
 }
-.addi {
-  font-family: Satoshi-700;
-}
-.addi p {
-  font-family: Nunito-400;
-}
-.addii {
-  font-family: Poppins-600;
-}
-.addii p {
-  font-family: Nunito-400;
-}
-#name {
+body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input {
+  width: 48%;
   height: 60px;
-  padding-left: 15px;
-  position: absolute;
-  left: 200px;
-  padding-top: 5px;
-  width: 250px;
-  font-family: Nunito-600;
+  padding: 20px 20px;
 }
-#email {
-  height: 60px;
-  padding-left: 20px;
-  position: absolute;
-  left: 500px;
-  padding-top: 5px;
-  width: 250px;
-  font-family: Nunito-600;
-}
-#message {
+body > section#contact > article:nth-child(2) > form > textarea {
+  width: 100%;
   height: 290px;
-  margin-left: -480px;
-  position: absolute;
-  margin-top: 100px;
-  width: 555px;
-  padding-top: 16px;
-  padding-left: 15px;
-  font-family: Nunito-600;
+  margin: 32px 0px;
+  padding: 20px 20px;
+  resize: none;
 }
-.btn-2 {
-  width: 230px;
-  height: 47px;
-  border: 0;
-  padding: 12px 10px;
-  outline: none;
-  color: white;
-  background: rgb(55, 114, 241);
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: width 0.5s ease;
-  text-align: center;
-  margin-bottom: 12px;
-  box-shadow: 0px 8px 25px rgb(106, 176, 199);
+body > section#contact > article:nth-child(2) > form > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
 }
-.btn-2 img {
-  width: 18px;
-  image-resolution: highest;
-  margin-left: 5%;
-  margin-bottom: 1%;
+body > section#contact > article:nth-child(2) > div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body > section#contact > article:nth-child(2) > div > div:nth-child(2) {
+  margin-top: 30%;
+}
+body > section#contact > article:nth-child(2) > div > div > h3 {
+  font-family: "Poppins-600";
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  margin: 0 0 16px 0px;
+}
+body > section#contact > article:nth-child(2) > div > div > address {
+  font-family: 'Nunito-400';
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+#submit-btn-cnt {
+  display: flex; justify-content: flex-end;
+}
+@media screen and (max-width: 1214px) {
+  body > section#contact > article:nth-child(2) > div {
+    width: 33%;
+  }
+  body > section#contact > article:nth-child(2) > div > div > h3 {
+    font-size: 22px;
+    margin: 0 0 15px 0px;
+  }
+  body > section#contact > article:nth-child(2) > div > div > address {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 1070px) {
+    body > section#contact > article:nth-child(2) {
+      width: 80%;
+      margin: 0 10%;
+    }
+    @media screen and (max-width: 980px) {
+      body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input {
+        width: 48%;
+        height: 55px;
+        padding: 20px 20px;
+      }
+      body > section#contact > article:nth-child(2) {
+        width: 85%;
+        margin: 0 7.5%;
+      }
+      body > section#contact > article:nth-child(2) > div {
+        width: 36%;
+      }
+      body > section#contact > article:nth-child(2) > div > div > h3 {
+        font-size: 20px;
+        margin: 0 0 12px 0px;
+      }
+      body > section#contact > article:nth-child(2) > div > div > address {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 880px) {
+        body > section#contact > article:nth-child(2) {
+          width: 90%;
+          margin: 0 5%;
+        }
+        body > section#contact > article:nth-child(2) > div {
+          width: 40%;
+        }
+        @media screen and (max-width: 768px) {
+          body > section#contact {
+            padding: 8% 0;
+          }
+          body > section#contact > article:nth-child(1) {
+            width: 78%;
+            margin-bottom: 8.5%;
+          }
+          body > section#contact > article:nth-child(1) > h2 {
+            font-size: 36px;
+            line-height: 45px;
+          }
+          body > section#contact > article:nth-child(1) > p {
+            font-size: 18px;
+            line-height: 28px;
+          }
+          body > section#contact > article:nth-child(2) {
+            width: 92%;
+            margin: 0 4%;
+          }
+          body > section#contact > article:nth-child(2) > form > div { width: 100%; }
+          body > section#contact > article:nth-child(2) > form > div:nth-child(1) {
+            padding-left: 0;
+          }
+          body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input,
+          body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input::placeholder,
+          body > section#contact > article:nth-child(2) > form > textarea {
+            font-size: 15px;
+            line-height: 20px;
+          }
+          body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input {
+            width: 48%;
+            height: 50px;
+            padding: 15px 15px;
+          }
+          body > section#contact > article:nth-child(2) > form > textarea {
+            width: 100%;
+            height: 250px;
+            margin: 18px 0px;
+            padding: 15px;
+          }
+          body > section#contact > article:nth-child(2) > div > div:nth-child(2) {
+            margin-top: 25%;
+          }
+          body > section#contact > article:nth-child(2) > div > div > h3 {
+            font-size: 21px;
+            line-height: 20px;
+            margin: 0 0 16px 0px;
+          }
+          body > section#contact > article:nth-child(2) > div > div > address {
+            font-size: 12px;
+            line-height: 18px;
+          }
+          @media screen and (max-width: 610px) {
+            body > section#contact {
+              padding: 15% 0;
+              border-bottom: 0.5px solid #000000;
+            }
+            body > section#contact > article:nth-child(2) {
+              flex-direction: column;
+              width: 78%;
+              margin: 0 11%;
+            }
+            body > section#contact > article:nth-child(2) > form {
+              width: 100%;
+              align-self: center;
+              margin-right: 0;
+            }
+            body > section#contact > article:nth-child(2) > form > textarea {
+              margin: 20px 0;
+              padding: 20px;
+            }
+            body > section#contact > article:nth-child(2) > div {
+              margin-top: 14%;
+              width: 100%;
+            }
+            body > section#contact > article:nth-child(2) > div > div:nth-child(2) {
+              margin-top: 11%;
+            }
+            body > section#contact > article:nth-child(2) > div > div > h3 {
+              font-size: 24px;
+              line-height: 24px;
+              margin: 0 0 16px 0px;
+            }
+            body > section#contact > article:nth-child(2) > div > div > address {
+              font-size: 16px;
+              line-height: 24px;
+            }
+            #submit-btn-cnt {
+              display: flex; justify-content: flex-start;
+              margin-top: 5%;
+            }
+            @media screen and (max-width: 428px) {
+              body > section#contact {
+                width: 100%;
+                padding: 8% 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+              body > section#contact > article:nth-child(1) {
+                width: 700px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 6%;
+              }
+              body > section#contact > article:nth-child(1) > h2 {
+                font-family: "Satoshi-900";
+                font-size: 48px;
+                line-height: 67px;
+                color: #3E3934;
+                margin: 0 0 16px 0;
+              }
+              body > section#contact > article:nth-child(1) > p {
+                font-family: "Nunito-400";
+                font-size: 21px;
+                line-height: 32px;
+                text-align: center;
+                color: #000000;
+              }
+              body > section#contact > article:nth-child(2) {
+                width: 90%;
+                margin: 0 13.5%;
+                display: flex;
+                align-items: flex-start;
+              }
+              body > section#contact > article:nth-child(2) > form {
+                width: 100%;
+                font-family: "Nunito-600";
+                display: flex;
+                flex-direction: column;
+                margin-right: 5%;
+              }
+              body > section#contact > article:nth-child(2) > form > div { width: 100%; }
+              body > section#contact > article:nth-child(2) > form > div:nth-child(1) {
+                padding-left: 0;
+                flex-direction: column;
+                align-items: center;
+              }
+              body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input {
+                width: 100%;
+                height: 50px;
+              }
+              #message {
+                height: 290px;
+                margin-top: 100px;
+                width: 100%;
+                padding-top: 16px;
+                padding-left: 15px;
+              }
+              body > section#contact > article:nth-child(2) > form > div:nth-child(2) {
+                display: flex;
+                justify-content: flex-start;
+              }
+              body > section#contact > article:nth-child(2) > div {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 /*
 
@@ -1736,6 +1950,7 @@ OUR FOOTER SECTION
 
 
 */
+footer {display: none;}
 footer {
   margin-top: 176px;
   background-color: #f0f8ff;
