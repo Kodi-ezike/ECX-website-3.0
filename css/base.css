@@ -6,12 +6,12 @@ CALLING FONTS FROM THE ../ASSETS FOLDER (fontface)
     src: url(../assets/fonts/DM_Sans/DMSans-Medium.ttf);
 }
 @font-face {
-    font-family: Inter-500;
-    src: url(../assets/fonts/Inter/Inter-Medium.ttf);
-}
-@font-face {
     font-family: Inter-400;
     src: url(../assets/fonts/Inter/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: Inter-500;
+    src: url(../assets/fonts/Inter/Inter-Medium.ttf);
 }
 @font-face {
     font-family: Nunito-400;
