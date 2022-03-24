@@ -1632,7 +1632,7 @@ CONTACT US SECTION
 */
 body > section#contact {
   width: 100%;
-  padding: 8% 0;
+  padding: 8% 0 17.5% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1920,68 +1920,101 @@ OUR FOOTER SECTION
 
 */
 footer {
-  margin-top: 176px;
   background-color: #f0f8ff;
+  width: 100%;
+  padding: 8% 0;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
-#foot {
-  font-family: Nunito-700;
-}
-
-.list {
+footer > nav#footer-nav-links {
+  width: 100%;
   position: relative;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4% 4% 4%;
 }
-
-.list li {
-  list-style: none;
-  margin: 0 40px;
-  text-decoration: none;
+footer > nav#footer-nav-links > #border-bttm {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
-footer .list a {
-  font-size: 18px;
-  font-weight: 500;
-  color: black;
-  padding: 6px 0;
+footer > nav#footer-nav-links ul.footer-nav-list {
+  width:360px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer > nav#footer-nav-links ul.footer-nav-list li a {
+  font-family: "Nunito-700";
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  color: #000000;
   transition: all 0.4s ease;
   text-decoration: none;
 }
-footer .list a:hover {
+footer > nav#footer-nav-links ul.footer-nav-list li a:hover {
   color: rgb(106, 176, 199);
 }
-
-#foot-logo {
-  margin-left: 64px;
-  margin-right: 64px;
+@media screen and (max-width: 1200px) {
+  footer > nav#footer-nav-links ul.footer-nav-list {
+    width:300px;
+  }
+  @media screen and (max-width: 1000px) {
+    footer > nav#footer-nav-links ul.footer-nav-list {
+      width:260px;
+    }
+    @media screen and (max-width: 850px) {
+      footer > nav#footer-nav-links ul.footer-nav-list {
+        width:250px;
+      }
+      footer > nav#footer-nav-links ul.footer-nav-list li a {
+        font-size: 14px;
+      }
+    }
+  }
 }
-
+footer > section#footer-others {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #socials {
   align-items: center;
   display: flex;
-  width: 80%;
-  margin-top: 4%;
-  background-color: #f0f8ff;
+  width: auto;
+  margin: 5% 0 2% 0;
 }
 
 #socials img {
   border-radius: 50%;
-  color: #f0f8ff;
-  width: 9%;
+  width: 44px;
+  height: auto;
   margin-left: 4%;
   padding: 10px 10px;
   image-rendering: pixelated;
-  image-resolution: highest;
-  background-color: white;
 }
-#foot {
-  background-color: f0f8ff;
-  padding-top: 20%;
+#socials img:nth-child(2) {
+  margin: 0 16px;
 }
 #icons {
   background-color: #f0f8ff;
   margin: 4% 12% 0% 42%;
 }
+strong {
+  font-family: "Nunito-700";
+}
 #copyright {
-  margin: 0% 12% 0% -6%;
-  font-family: Nunito-400;
+  width: auto;
+  font-family: "Nunito-400";
+  font-size: 15px;
+  line-height: 24px;
 }
 
