@@ -1975,6 +1975,7 @@ footer > section#footer-others > div#socials {
 }
 footer > section#footer-others > div#socials img {
   border-radius: 50%;
+  background: #fff;
   width: 44px;
   height: auto;
   margin-left: 4%;
