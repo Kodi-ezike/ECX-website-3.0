@@ -1491,6 +1491,7 @@ body > section#teams div#image-panel-cont article.image-panel > div > div.team-m
 body > section#teams article#teams-sect-btn {
   display: flex;
   justify-content: center;
+  margin-top: 4%;;
 }
 @media screen and (max-width: 428px) {
   body > section#teams {
