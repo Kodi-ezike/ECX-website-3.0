@@ -1012,7 +1012,7 @@ WHAT WE DO SECTION
 body > #what-we-do {
   background: transparent;
   margin: 80px 0;
-  padding-top: 90px;
+  padding-top: 150px;
   display: flex;
   flex-direction: column;
 }
@@ -1317,17 +1317,58 @@ body > section#teams {
 body > section#teams article {
   width: 100%;
 }
-body > section#teams article.image-panel {
+body > section#teams article#teams-sect-heading {
+  padding: 4% 7.5%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9%;
+}
+body > section#teams article#teams-sect-heading > h2 {
+  font-family: "Poppins-700";
+  font-size: 36px;
+  line-height: 67px;
+  color: #3E3934;
+  margin: 16px 0px;
+}
+body > section#teams article#teams-sect-heading > p {
+  font-family: "Inter-400";
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  text-align: center;
+}
+body > section#teams div#image-panel-cont {
+  width: calc(100% - 18%);
+  margin: 0 9%;
+  overflow-x: auto;
+}
+body > section#teams div#image-panel-cont article.image-panel {
   display: flex;
   column-gap: 0;
   margin-bottom: 4.5%;
-  padding: 0 9%;
-  overflow-x: auto;
 }
-body > section#teams article.image-panel::-webkit-scrollbar {
+body > section#teams div#image-panel-cont::-webkit-scrollbar-button {
   display: none;
 }
-body > section#teams article.image-panel > div {
+/* Let's get this party started */
+body > section#teams div#image-panel-cont::-webkit-scrollbar {
+  height: 11px;
+}
+
+/* Track */
+body > section#teams div#image-panel-cont::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(1, 95, 157, 0.2);
+}
+/* Handle */
+body > section#teams div#image-panel-cont::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(1, 95, 157, 0.85);
+}
+body > section#teams div#image-panel-cont article.image-panel > div {
   width: 240px;
   height: 373px;
   padding: 21px 26px;
@@ -1335,21 +1376,21 @@ body > section#teams article.image-panel > div {
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
   flex: 0 0 240px;
 }
-body > section#teams article.image-panel > div div.round-top-rectangle {
+body > section#teams div#image-panel-cont article.image-panel > div div.round-top-rectangle {
   width: 51px;
   height: 8px;
   background: #e5e5e5;
   border-radius: 24px;
   margin: 0 auto 21px auto;
 }
-body > section#teams article.image-panel > div div:nth-child(2) {
+body > section#teams div#image-panel-cont article.image-panel > div div:nth-child(2) {
   position: relative;
 }
-body > section#teams article.image-panel > div div > img {
+body > section#teams div#image-panel-cont article.image-panel > div div > img {
   width: 100%;
   height: auto;
 }
-body > section#teams article.image-panel > div div > div.team-mbr-no {
+body > section#teams div#image-panel-cont article.image-panel > div div > div.team-mbr-no {
   position: absolute;
   top: 0;
   left: 0;
@@ -1429,27 +1470,79 @@ body
   > div.team-mbr-no {
   background: #ef4239;
 }
-body > section#teams article.image-panel > div > div.team-mbr-txt {
+body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt {
   margin-top: 44%;
   text-align: left;
 }
-body > section#teams article.image-panel > div > div.team-mbr-txt h2 {
+body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h2 {
   font-family: "Satoshi-700";
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1em;
   color: #000000;
 }
-body > section#teams article.image-panel > div > div.team-mbr-txt h3 {
+body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h3 {
   font-family: "Nunito-600";
   font-size: 12px;
   line-height: 20px;
   color: #b6b6b6;
   margin: 2px 0px;
 }
-body > section#teams article:nth-child(3) {
+body > section#teams article#teams-sect-btn {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 428px) {
+  body > section#teams {
+    padding-bottom: 15%;
+  }
+  body > section#teams article#teams-sect-heading {
+    display: flex;
+  }
+  body > section#teams div#image-panel-cont {
+    width: calc(100% - 15%);
+    padding: 0;
+    margin: 0 7.5%;
+  }
+  body > section#teams div#image-panel-cont article.image-panel {
+    margin-bottom: 5.5%;
+  }
+  body > section#teams div#image-panel-cont article.image-panel > div {
+    width: 187px;
+    height: 288px;
+    padding: 16px 20px;
+    box-shadow: 0px 1.54667px 0px rgba(0, 0, 0, 0.25);
+    flex: 0 0 187px;
+  }
+  body > section#teams div#image-panel-cont article.image-panel > div div.round-top-rectangle {
+    width: 39px;
+    height: 6px;
+    background: #e5e5e5;
+    border-radius: 18.56px;
+    margin: 0 auto 15px auto;
+  }
+  body > section#teams div#image-panel-cont article.image-panel > div div > div.team-mbr-no {
+    height: 134.5%;
+    font-size: 37.12px;
+    line-height: 37px;
+    letter-spacing: -0.015em;
+    padding-bottom: 4%;
+  }
+  body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h2 {
+    font-family: "Nunito-700";
+    font-size: 12.3733px;
+    line-height: 15px;
+  }
+  body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h3 {
+    line-height: 15px;
+  }
+  body > section#teams article#teams-sect-btn {
+    margin-top: 10%;
+  }
+  body > section#teams article#teams-sect-btn > button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 /*
 
