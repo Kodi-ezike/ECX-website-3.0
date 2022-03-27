@@ -64,3 +64,9 @@ body {
     background: #F3F8FF;
     overflow-x: hidden;
 }
+body > section, body > footer {
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
