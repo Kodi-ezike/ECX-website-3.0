@@ -1120,6 +1120,11 @@ body > section#what-we-do > article.list-of-what-we-do > div > button i {
   font-family: "Nunito-400";
 }
 /*RESPONSIVENESS ISH*/
+@media screen and (min-width: 859px) {
+  body > section#what-we-do > article.list-of-what-we-do {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 858px) {
   body > section#what-we-do > article.list-of-what-we-do {
     flex-wrap: nowrap;
@@ -1180,14 +1185,6 @@ body > section#gallery > article:nth-child(1) h2 {
   color: #000000;
   margin-bottom: 2%;
 }
-body > section#gallery > article:nth-child(1) div.gallery-img-ctrl {
-  position: absolute;
-  top: 5%;
-  right: 9%;
-  display: flex;
-  width: 14%;
-  justify-content: space-between;
-}
 body > section#gallery > article:nth-child(1) p {
   width: 700px;
   font-size: 21px;
@@ -1195,6 +1192,21 @@ body > section#gallery > article:nth-child(1) p {
   font-family: "Nunito-400";
   text-align: center;
   color: #000000;
+  z-index: 99;
+}
+body > section#gallery > article:nth-child(1) div.gallery-img-ctrl {
+  position: absolute;
+  top: 5%;
+  right: 9%;
+  display: flex;
+  width: 14%;
+  justify-content: space-between;
+  z-index: 999;
+}
+body > section#gallery > article:nth-child(1) div.gallery-img-ctrl button {
+  background:transparent;
+  width: auto;
+  height: auto;
 }
 body > section#gallery > article#image-container {
   height: 451px;
@@ -1350,7 +1362,10 @@ body > section#teams div#image-panel-cont {
 body > section#teams div#image-panel-cont article.image-panel {
   display: flex;
   column-gap: 0;
+  width: 1260px;
+  margin: 0 auto;
   margin-bottom: 4.5%;
+  justify-content: space-between;
 }
 body > section#teams div#image-panel-cont::-webkit-scrollbar {
   height: 11px;
@@ -1527,6 +1542,7 @@ body > section#teams article#teams-sect-btn {
   }
   body > section#teams div#image-panel-cont article.image-panel {
     margin-bottom: 5.5%;
+    width: 1000px;
   }
   body > section#teams div#image-panel-cont article.image-panel > div {
     width: 187px;

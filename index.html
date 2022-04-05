@@ -9,7 +9,11 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/ico" href="" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="assets/favicon/favicon.ico">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <!--add tooltips for the links-->
     <!--make sure all required alts are defined-->
   </head>
@@ -17,32 +21,32 @@
     <header class="hero">
       <nav>
         <div class="logo">
-          <img src="assets/images/Logo.svg" alt="logo" />
+          <img src="assets/images/Logo.svg" alt="logo" title="logo" />
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" title="menu">
           <div class="top-bar"></div>
           <div class="middle-bar"></div>
           <div class="bottom-bar"></div>
         </div>
         <ul>
           <li>
-            <a href="#"
+            <a href="#" title="Go to About page"
               >About
               <i><img src="assets/icons/caret.svg" alt="dropdown icon" /></i
             ></a>
           </li>
-          <li><a href="#">What we do</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Team</a></li>
+          <li><a href="#" title="Go to What we do page">What we do</a></li>
+          <li><a href="#" title="Go to Gallery page">Gallery</a></li>
+          <li><a href="#" title="Go to Team page">Team</a></li>
           <li>
-            <a href="#"
+            <a href="#" title="Go to Event page"
               >Event
               <i><img src="assets/icons/caret.svg" alt="dropdown icon" /></i
             ></a>
           </li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>Join ECX</li>
+          <li><a href="#" title="Go to Blog page">Blog</a></li>
+          <li><a href="#" title="Go to Contact page">Contact</a></li>
+          <li title="Join ECX">Join ECX</li>
         </ul>
       </nav>
       <section id="hero-sect">
@@ -355,90 +359,90 @@
         </div>
       </article>
       <img
-          class="hl position-absolute"
-          src="assets/icons/black-dot.svg"
-          style="top: 147px; left: calc(14% + 7px); z-index: 4"
-          alt=""
-        />
-        <img
-          class="hl position-absolute"
-          src="assets/icons/wwd-section-chain-line-0.svg"
-          style="
-            top: 40px;
-            left: calc(15% + 2px);
-            z-index: 3;
-          "
-          alt=""
-        />
+        class="hl position-absolute"
+        src="assets/icons/black-dot.svg"
+        style="top: 147px; left: calc(14% + 7px); z-index: 4"
+        alt=""
+      />
+      <img
+        class="hl position-absolute"
+        src="assets/icons/wwd-section-chain-line-0.svg"
+        style="top: 40px; left: calc(15% + 2px); z-index: 3"
+        alt=""
+      />
     </section>
     <section id="gallery">
       <article>
         <h2>Gallery</h2>
         <div class="gallery-img-ctrl">
-          <svg
-            id="prev-btn"
-            width="60"
-            height="60"
-            viewBox="0 0 60 60"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M30 52.5C17.5736 52.5 7.5 42.4264 7.5 30C7.5 17.5736 17.5736 7.5 30 7.5C42.4264 7.5 52.5 17.5736 52.5 30C52.5 42.4264 42.4264 52.5 30 52.5Z"
-              stroke="#000000"
-              stroke-opacity="0.53"
-              stroke-width="3.36667"
-              stroke-miterlimit="10"
-            />
-            <path
-              d="M28.5801 37.9548L20.6252 29.9998L28.5801 22.0449"
-              stroke="#000000"
-              stroke-opacity="0.53"
-              stroke-width="3.36667"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M39.375 30H20.625"
-              stroke="#000000"
-              stroke-opacity="0.53"
-              stroke-width="3.36667"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <svg
-            id="nxt-btn"
-            width="60"
-            height="60"
-            viewBox="0 0 60 60"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M30 52.5C42.4264 52.5 52.5 42.4264 52.5 30C52.5 17.5736 42.4264 7.5 30 7.5C17.5736 7.5 7.5 17.5736 7.5 30C7.5 42.4264 17.5736 52.5 30 52.5Z"
-              stroke="#000000"
-              stroke-opacity="0.53"
-              stroke-width="3.36667"
-              stroke-miterlimit="10"
-            />
-            <path
-              d="M31.4199 37.9548L39.3748 29.9998L31.4199 22.0449"
-              stroke="#000000"
-              stroke-opacity="0.53"
-              stroke-width="3.36667"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M20.625 30H39.375"
-              stroke="#000000"
-              stroke-opacity="0.53"
-              stroke-width="3.36667"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <button id="prev">
+            <svg
+              id="prev-btn"
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30 52.5C17.5736 52.5 7.5 42.4264 7.5 30C7.5 17.5736 17.5736 7.5 30 7.5C42.4264 7.5 52.5 17.5736 52.5 30C52.5 42.4264 42.4264 52.5 30 52.5Z"
+                stroke="#000000"
+                stroke-opacity="0.53"
+                stroke-width="3.36667"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M28.5801 37.9548L20.6252 29.9998L28.5801 22.0449"
+                stroke="#000000"
+                stroke-opacity="0.53"
+                stroke-width="3.36667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M39.375 30H20.625"
+                stroke="#000000"
+                stroke-opacity="0.53"
+                stroke-width="3.36667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button id="nxt">
+            <svg
+              id="nxt-btn"
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30 52.5C42.4264 52.5 52.5 42.4264 52.5 30C52.5 17.5736 42.4264 7.5 30 7.5C17.5736 7.5 7.5 17.5736 7.5 30C7.5 42.4264 17.5736 52.5 30 52.5Z"
+                stroke="#000000"
+                stroke-opacity="0.53"
+                stroke-width="3.36667"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M31.4199 37.9548L39.3748 29.9998L31.4199 22.0449"
+                stroke="#000000"
+                stroke-opacity="0.53"
+                stroke-width="3.36667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.625 30H39.375"
+                stroke="#000000"
+                stroke-opacity="0.53"
+                stroke-width="3.36667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
         </div>
         <p>
           We believe in building engineers needed in creating designs systems
@@ -461,15 +465,15 @@
         </button>
       </article>
       <img
-          class="hl position-absolute"
-          src="assets/icons/black-dot.svg"
-          style="top: 138px; left: calc(14% + 7px); z-index: 4"
-          alt=""
-        />
-      <img 
+        class="hl position-absolute"
+        src="assets/icons/black-dot.svg"
+        style="top: 138px; left: calc(14% + 7px); z-index: 4"
+        alt=""
+      />
+      <img
         class="hl position-absolute"
         src="assets/icons/gallery-chain-line.svg"
-        style="top: 36px; left: calc(15% + 2px); z-index: 3;"
+        style="top: 36px; left: calc(15% + 2px); z-index: 3"
         alt=""
       />
     </section>
@@ -477,9 +481,9 @@
       <article id="teams-sect-heading">
         <h2>Meet our Team</h2>
         <p>
-          We believe in building engineers needed in creating designs systems needed all around the globe. 
-          Well equipped to compete all the world.
-          Here are listed trainings we emplore to equip our engineers. 
+          We believe in building engineers needed in creating designs systems
+          needed all around the globe. Well equipped to compete all the world.
+          Here are listed trainings we emplore to equip our engineers.
         </p>
       </article>
       <div id="image-panel-cont">
@@ -604,7 +608,7 @@
           <img src="assets/icons/btn-arrow-left.svg" alt="" />
         </button>
       </article>
-      <img 
+      <img
         class="hl position-absolute"
         id="team-line"
         src="assets/icons/teams-chain-line.svg"
@@ -659,18 +663,18 @@
         </div>
       </div>
       <img
-          class="hl position-absolute"
-          src="assets/icons/black-dot.svg"
-          style="top: 130px; left: calc(14% + 7px); z-index: 4"
-          alt=""
-        />
-      <img 
         class="hl position-absolute"
-        src="assets/icons/achievement-top-chain-line.svg"
-        style="top: 36px; left: calc(15% + 2px); z-index: 3;"
+        src="assets/icons/black-dot.svg"
+        style="top: 130px; left: calc(14% + 7px); z-index: 4"
         alt=""
       />
-      <img 
+      <img
+        class="hl position-absolute"
+        src="assets/icons/achievement-top-chain-line.svg"
+        style="top: 36px; left: calc(15% + 2px); z-index: 3"
+        alt=""
+      />
+      <img
         class="hl position-absolute"
         id="achieve-bottom-line"
         src="assets/icons/achievement-bottom-chain-line.svg"
@@ -699,7 +703,7 @@
             cols="30"
           ></textarea>
           <div id="submit-btn-cnt">
-            <button type="submit" class="btn" style="background: #3E84F8;">
+            <button type="submit" class="btn" style="background: #3e84f8">
               <i>Send Message</i>
               <img src="assets/icons/btn-arrow-left.svg" alt="" />
             </button>
@@ -709,36 +713,36 @@
           <div>
             <h3>Address</h3>
             <address>
-              University of Lagos, University Road<br>
-              Lagos Mainland Akoka, Yaba, Lagos<br>
+              University of Lagos, University Road<br />
+              Lagos Mainland Akoka, Yaba, Lagos<br />
               Monday - Friday: 8:00 AM to 5:00PM
             </address>
           </div>
           <div>
             <h3>Contact Info</h3>
             <address>
-              Phone: +234 xxx xxxx xxx<br>
+              Phone: +234 xxx xxxx xxx<br />
               Email: info@ecx.website
             </address>
           </div>
         </div>
       </article>
       <img
-          class="hl position-absolute"
-          src="assets/icons/black-dot.svg"
-          style="top: 150px; left: calc(14% + 7px); z-index: 4"
-          alt=""
-        />
-      <img 
         class="hl position-absolute"
-        src="assets/icons/contact-top-chain-line.svg"
-        style="top: 50px; left: calc(15% + 2px); z-index: 3;"
+        src="assets/icons/black-dot.svg"
+        style="top: 150px; left: calc(14% + 7px); z-index: 4"
         alt=""
       />
-      <img 
+      <img
+        class="hl position-absolute"
+        src="assets/icons/contact-top-chain-line.svg"
+        style="top: 50px; left: calc(15% + 2px); z-index: 3"
+        alt=""
+      />
+      <img
         class="hl position-absolute"
         src="assets/icons/contact-bottom-chain-line.svg"
-        style="bottom: 0; left: calc(15% + 2px); z-index: 3;"
+        style="bottom: 0; left: calc(15% + 2px); z-index: 3"
         alt=""
       />
     </section>
@@ -749,15 +753,15 @@
           <li><a href="#">Feedback</a></li>
           <li><a href="#">Community</a></li>
         </ul>
-            <div id="footer-logo">
-              <img src="assets/icons/Logo-with name.svg" alt="" />
-            </div>
+        <div id="footer-logo">
+          <img src="assets/icons/Logo-with name.svg" alt="" />
+        </div>
         <ul class="footer-nav-list">
           <li><a href="#">Help desk</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Resources</a></li>
         </ul>
-        <hr id="border-bttm">
+        <hr id="border-bttm" />
       </nav>
       <section id="footer-others">
         <div id="socials">
@@ -768,10 +772,10 @@
         <div id="copyright">
           <strong>&copy; ECX, Inc. 2022.</strong> We love our users!
         </div>
-        <img 
+        <img
           class="hl position-absolute"
           src="assets/icons/footer-chain-line.svg"
-          style="top: 47.5%; left: calc(15% + 2px); z-index: 3;"
+          style="top: 47.5%; left: calc(15% + 2px); z-index: 3"
           alt=""
         />
       </section>

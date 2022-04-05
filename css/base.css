@@ -67,6 +67,9 @@ body {
 body > section, body > footer {
     position: relative;
 }
+button {
+    cursor: pointer;
+}
 .position-absolute {
     position: absolute;
 }
