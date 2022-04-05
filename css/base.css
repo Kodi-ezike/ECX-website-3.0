@@ -1,6 +1,8 @@
-/*
-CALLING FONTS FROM THE ../ASSETS FOLDER (fontface)
-*/
+/* CALLING FONTS FROM THE ../ASSETS FOLDER (fontface) */
+@font-face {
+    font-family: Montserrat-600;
+    src: url(../assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
 @font-face {
     font-family: DM-Sans-500;
     src: url(../assets/fonts/DM_Sans/DMSans-Medium.ttf);
@@ -45,9 +47,7 @@ CALLING FONTS FROM THE ../ASSETS FOLDER (fontface)
     font-family: Sora-300;
     src: url(../assets/fonts/Sora/Sora-Light.ttf);
 }
-  
-  /* Removing some default styles */
-  
+/* Removing some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -57,15 +57,6 @@ CALLING FONTS FROM THE ../ASSETS FOLDER (fontface)
     font-style: normal;
     text-decoration: none;
     list-style: none;
-}
-html,
-body {
-    width: 100%;
-    background: #F3F8FF;
-    overflow-x: hidden;
-}
-body > section, body > footer {
-    position: relative;
 }
 button {
     cursor: pointer;

@@ -1,13 +1,15 @@
 @import "base.css"; /* calling the css file with the fonts and basic styles */
-/*
-
-
-
-HEADER SECTION
-
-
-
-*/
+html,
+body {
+  width: 100%;
+  background: #f3f8ff;
+  overflow-x: hidden;
+}
+body > section,
+body > footer {
+  position: relative;
+}
+/* HEADER SECTION */
 body > header.hero {
   height: 901px;
   position: relative;
@@ -418,15 +420,7 @@ body > header.hero > #hero-sect #hero-txt button i {
   top: 22%;
   left: 15%;
 }
-/* 
-
-
-
-  ABOUT US SECTION
- 
-  
-  
-*/
+/* ABOUT US SECTION */
 body > #about-us {
   background: rgba(62, 132, 248, 0.06);
   display: flex;
@@ -434,10 +428,7 @@ body > #about-us {
   flex-direction: column;
   align-items: center;
 }
-/*
-  ABOUT SECTION ARTICLE 1:
-  contains the header and paragraph of the about page
-*/
+/* ABOUT SECTION ARTICLE 1: contains the header and paragraph of the about page */
 body > #about-us > article:nth-child(1) {
   width: 52%;
   /*padding: 8.5% 0 6% 0;*/
@@ -534,10 +525,7 @@ body > #about-us > article:nth-child(1) p {
     }
   }
 }
-/*
-  ABOUT SECTION ARTICLE 2:
-  contains the four cards(rectangular boxes) of the about page
-*/
+/* ABOUT SECTION ARTICLE 2: contains the four cards(rectangular boxes) of the about page */
 
 body > #about-us article:nth-child(2) {
   display: flex;
@@ -628,7 +616,6 @@ body
     display: none;
   }
   body > #about-us article:nth-child(2) > div {
-    /*width: 400px;*/
     flex: 0 0 343px;
     height: 368px;
     position: relative;
@@ -741,10 +728,7 @@ body
     }
   }
 }
-/*
-  ABOUT SECTION ARTICLE 3:
-  contains the three cards(square boxes with svg images) of the about page
-*/
+/* ABOUT SECTION ARTICLE 3: contains the three cards(square boxes with svg images) of the about page */
 body > #about-us > article:nth-child(3) {
   width: 100%;
 }
@@ -999,15 +983,7 @@ body > #about-us > .about-section-dots > div {
     }
   }
 }
-/*
-
-
-
-WHAT WE DO SECTION
-
-
-
-*/
+/* WHAT WE DO SECTION */
 
 body > #what-we-do {
   background: transparent;
@@ -1119,7 +1095,6 @@ body > section#what-we-do > article.list-of-what-we-do > div > button i {
   letter-spacing: -0.015em;
   font-family: "Nunito-400";
 }
-/*RESPONSIVENESS ISH*/
 @media screen and (min-width: 859px) {
   body > section#what-we-do > article.list-of-what-we-do {
     justify-content: center;
@@ -1154,16 +1129,7 @@ body > section#what-we-do > article.list-of-what-we-do > div > button i {
     }
   }
 }
-/* MIKE'S CODE */
-/*
-
-
-
-GALLERY SECTION
-
-
-
-*/
+/* GALLERY SECTION */
 body > section#gallery {
   align-items: center;
   width: 100%;
@@ -1204,7 +1170,7 @@ body > section#gallery > article:nth-child(1) div.gallery-img-ctrl {
   z-index: 999;
 }
 body > section#gallery > article:nth-child(1) div.gallery-img-ctrl button {
-  background:transparent;
+  background: transparent;
   width: auto;
   height: auto;
 }
@@ -1316,15 +1282,7 @@ body > section#gallery > article:nth-child(3) {
     }
   }
 }
-/*
-
-
-
-OUR TEAM SECTION
-
-
-
-*/
+/* OUR TEAM SECTION */
 body > section#teams {
   width: 100%;
   padding: 3% 0 25.5% 0;
@@ -1344,7 +1302,7 @@ body > section#teams article#teams-sect-heading > h2 {
   font-family: "Poppins-700";
   font-size: 27px;
   line-height: 67px;
-  color: #3E3934;
+  color: #3e3934;
   margin: 16px 0px;
 }
 body > section#teams article#teams-sect-heading > p {
@@ -1394,21 +1352,37 @@ body > section#teams div#image-panel-cont article.image-panel > div {
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
   flex: 0 0 240px;
 }
-body > section#teams div#image-panel-cont article.image-panel > div div.round-top-rectangle {
+body
+  > section#teams
+  div#image-panel-cont
+  article.image-panel
+  > div
+  div.round-top-rectangle {
   width: 51px;
   height: 8px;
   background: #e5e5e5;
   border-radius: 24px;
   margin: 0 auto 21px auto;
 }
-body > section#teams div#image-panel-cont article.image-panel > div div:nth-child(2) {
+body
+  > section#teams
+  div#image-panel-cont
+  article.image-panel
+  > div
+  div:nth-child(2) {
   position: relative;
 }
 body > section#teams div#image-panel-cont article.image-panel > div div > img {
   width: 100%;
   height: auto;
 }
-body > section#teams div#image-panel-cont article.image-panel > div div > div.team-mbr-no {
+body
+  > section#teams
+  div#image-panel-cont
+  article.image-panel
+  > div
+  div
+  > div.team-mbr-no {
   position: absolute;
   top: 0;
   left: 0;
@@ -1488,18 +1462,35 @@ body
   > div.team-mbr-no {
   background: #ef4239;
 }
-body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt {
+body
+  > section#teams
+  div#image-panel-cont
+  article.image-panel
+  > div
+  > div.team-mbr-txt {
   margin-top: 44%;
   text-align: left;
 }
-body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h2 {
+body
+  > section#teams
+  div#image-panel-cont
+  article.image-panel
+  > div
+  > div.team-mbr-txt
+  h2 {
   font-family: "Satoshi-700";
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1em;
   color: #000000;
 }
-body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h3 {
+body
+  > section#teams
+  div#image-panel-cont
+  article.image-panel
+  > div
+  > div.team-mbr-txt
+  h3 {
   font-family: "Nunito-600";
   font-size: 12px;
   line-height: 20px;
@@ -1551,26 +1542,49 @@ body > section#teams article#teams-sect-btn {
     box-shadow: 0px 1.54667px 0px rgba(0, 0, 0, 0.25);
     flex: 0 0 187px;
   }
-  body > section#teams div#image-panel-cont article.image-panel > div div.round-top-rectangle {
+  body
+    > section#teams
+    div#image-panel-cont
+    article.image-panel
+    > div
+    div.round-top-rectangle {
     width: 39px;
     height: 6px;
     background: #e5e5e5;
     border-radius: 18.56px;
     margin: 0 auto 15px auto;
   }
-  body > section#teams div#image-panel-cont article.image-panel > div div > div.team-mbr-no {
+  body
+    > section#teams
+    div#image-panel-cont
+    article.image-panel
+    > div
+    div
+    > div.team-mbr-no {
     height: 134.5%;
     font-size: 37.12px;
     line-height: 37px;
     letter-spacing: -0.015em;
     padding-bottom: 4%;
   }
-  body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h2 {
+  body
+    > section#teams
+    div#image-panel-cont
+    article.image-panel
+    > div
+    > div.team-mbr-txt
+    h2 {
     font-family: "Nunito-700";
     font-size: 12.3733px;
     line-height: 15px;
   }
-  body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h3 {
+  body
+    > section#teams
+    div#image-panel-cont
+    article.image-panel
+    > div
+    > div.team-mbr-txt
+    h3 {
     line-height: 15px;
   }
   body > section#teams article#teams-sect-btn {
@@ -1581,15 +1595,7 @@ body > section#teams article#teams-sect-btn {
     padding-bottom: 14px;
   }
 }
-/*
-
-
-
-OUR ACHIEVEMENT SECTION
-
-
-
-*/
+/* OUR ACHIEVEMENT SECTION */
 body > #our-achievements {
   width: 100%;
   padding: 8% 0 12% 0;
@@ -1639,7 +1645,7 @@ body > #our-achievements > #ach-cont {
 body > #our-achievements > #ach-cont div.ach {
   width: 230px;
   height: 504px;
-  background: #FFFFFF;
+  background: #ffffff;
   text-align: center;
   box-shadow: 0px 49px 47px rgba(0, 0, 0, 0.07);
   border-radius: 8px;
@@ -1660,7 +1666,7 @@ body > #our-achievements > #ach-cont div.ach div > h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #3E3934;
+  color: #3e3934;
 }
 body > #our-achievements > #ach-cont div.ach div > span {
   width: 100%;
@@ -1754,7 +1760,7 @@ body > #our-achievements > #ach-cont div.ach div > span {
 #achieve-bottom-line {
   bottom: 1.9%;
   left: calc(15% + 2px);
-  z-index: 3; 
+  z-index: 3;
 }
 @media screen and (max-width: 1299px) {
   #achieve-bottom-line {
@@ -1766,15 +1772,7 @@ body > #our-achievements > #ach-cont div.ach div > span {
     }
   }
 }
-/*
-
-
-
-CONTACT US SECTION
-
-
-
-*/
+/* CONTACT US SECTION */
 body > section#contact {
   width: 100%;
   padding: 9% 0 18% 0;
@@ -1793,7 +1791,7 @@ body > section#contact > article:nth-child(1) > h2 {
   font-family: "Satoshi-900";
   font-size: 48px;
   line-height: 67px;
-  color: #3E3934;
+  color: #3e3934;
   margin: 0 0 16px 0;
 }
 body > section#contact > article:nth-child(1) > p {
@@ -1816,23 +1814,34 @@ body > section#contact > article:nth-child(2) > form {
   flex-direction: column;
   margin-right: 5%;
 }
-body > section#contact > article:nth-child(2) > form > div { width: 100%; }
+body > section#contact > article:nth-child(2) > form > div {
+  width: 100%;
+}
 body > section#contact > article:nth-child(2) > form > div:nth-child(1) {
   padding-left: 1%;
   display: flex;
   justify-content: space-between;
 }
 body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input,
-body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input::placeholder,
-body > section#contact > article:nth-child(2) > form > textarea
- {
-  background: #FFFFFF;
+body
+  > section#contact
+  > article:nth-child(2)
+  > form
+  > div:nth-child(1)
+  > input::placeholder,
+body > section#contact > article:nth-child(2) > form > textarea {
+  background: #ffffff;
   font-size: 16px;
   line-height: 24px;
   color: #686767;
   font-family: "Nunito-400";
 }
-body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input {
+body
+  > section#contact
+  > article:nth-child(2)
+  > form
+  > div:nth-child(1)
+  > input {
   width: 48%;
   height: 60px;
   padding: 20px 20px;
@@ -1866,13 +1875,14 @@ body > section#contact > article:nth-child(2) > div > div > h3 {
   margin: 0 0 16px 0px;
 }
 body > section#contact > article:nth-child(2) > div > div > address {
-  font-family: 'Nunito-400';
+  font-family: "Nunito-400";
   font-size: 16px;
   line-height: 24px;
   color: #000000;
 }
 #submit-btn-cnt {
-  display: flex; justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 @media screen and (max-width: 1214px) {
   body > section#contact > article:nth-child(2) > div {
@@ -1891,7 +1901,12 @@ body > section#contact > article:nth-child(2) > div > div > address {
       margin: 0 10%;
     }
     @media screen and (max-width: 980px) {
-      body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input {
+      body
+        > section#contact
+        > article:nth-child(2)
+        > form
+        > div:nth-child(1)
+        > input {
         width: 48%;
         height: 55px;
         padding: 20px 20px;
@@ -1938,17 +1953,38 @@ body > section#contact > article:nth-child(2) > div > div > address {
             width: 92%;
             margin: 0 4%;
           }
-          body > section#contact > article:nth-child(2) > form > div { width: 100%; }
-          body > section#contact > article:nth-child(2) > form > div:nth-child(1) {
+          body > section#contact > article:nth-child(2) > form > div {
+            width: 100%;
+          }
+          body
+            > section#contact
+            > article:nth-child(2)
+            > form
+            > div:nth-child(1) {
             padding-left: 0;
           }
-          body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input,
-          body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input::placeholder,
+          body
+            > section#contact
+            > article:nth-child(2)
+            > form
+            > div:nth-child(1)
+            > input,
+          body
+            > section#contact
+            > article:nth-child(2)
+            > form
+            > div:nth-child(1)
+            > input::placeholder,
           body > section#contact > article:nth-child(2) > form > textarea {
             font-size: 15px;
             line-height: 20px;
           }
-          body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input {
+          body
+            > section#contact
+            > article:nth-child(2)
+            > form
+            > div:nth-child(1)
+            > input {
             width: 48%;
             height: 50px;
             padding: 15px 15px;
@@ -1959,7 +1995,11 @@ body > section#contact > article:nth-child(2) > div > div > address {
             margin: 18px 0px;
             padding: 15px;
           }
-          body > section#contact > article:nth-child(2) > div > div:nth-child(2) {
+          body
+            > section#contact
+            > article:nth-child(2)
+            > div
+            > div:nth-child(2) {
             margin-top: 25%;
           }
           body > section#contact > article:nth-child(2) > div > div > h3 {
@@ -1993,7 +2033,11 @@ body > section#contact > article:nth-child(2) > div > div > address {
               margin-top: 14%;
               width: 100%;
             }
-            body > section#contact > article:nth-child(2) > div > div:nth-child(2) {
+            body
+              > section#contact
+              > article:nth-child(2)
+              > div
+              > div:nth-child(2) {
               margin-top: 11%;
             }
             body > section#contact > article:nth-child(2) > div > div > h3 {
@@ -2001,12 +2045,18 @@ body > section#contact > article:nth-child(2) > div > div > address {
               line-height: 24px;
               margin: 0 0 16px 0px;
             }
-            body > section#contact > article:nth-child(2) > div > div > address {
+            body
+              > section#contact
+              > article:nth-child(2)
+              > div
+              > div
+              > address {
               font-size: 16px;
               line-height: 24px;
             }
             #submit-btn-cnt {
-              display: flex; justify-content: flex-start;
+              display: flex;
+              justify-content: flex-start;
               margin-top: 5%;
             }
             @media screen and (max-width: 428px) {
@@ -2026,12 +2076,21 @@ body > section#contact > article:nth-child(2) > div > div > address {
                 width: 87%;
                 margin: 0 6.5%;
               }
-              body > section#contact > article:nth-child(2) > form > div:nth-child(1) {
+              body
+                > section#contact
+                > article:nth-child(2)
+                > form
+                > div:nth-child(1) {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
               }
-              body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input {
+              body
+                > section#contact
+                > article:nth-child(2)
+                > form
+                > div:nth-child(1)
+                > input {
                 width: 100%;
                 font-size: 16px;
                 margin-bottom: 16px;
@@ -2040,11 +2099,16 @@ body > section#contact > article:nth-child(2) > div > div > address {
               body > section#contact > article:nth-child(2) > form > textarea {
                 margin: 0 0 16px 0;
               }
-              body > section#contact > article:nth-child(2) > div > div:nth-child(2) {
+              body
+                > section#contact
+                > article:nth-child(2)
+                > div
+                > div:nth-child(2) {
                 margin-top: 17%;
               }
               #submit-btn-cnt {
-                display: flex; justify-content: flex-start;
+                display: flex;
+                justify-content: flex-start;
                 margin: 9% 0 1% 0;
               }
             }
@@ -2054,22 +2118,14 @@ body > section#contact > article:nth-child(2) > div > div > address {
     }
   }
 }
-/*
-
-
-
-OUR FOOTER SECTION
-
-
-
-*/
+/* OUR FOOTER SECTION */
 footer {
   background-color: #f0f8ff;
   width: 100%;
   padding: 10% 0;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 footer > nav#footer-nav-links {
   width: 100%;
@@ -2088,7 +2144,7 @@ footer > nav#footer-nav-links > #border-bttm {
   background: rgba(0, 0, 0, 0.3);
 }
 footer > nav#footer-nav-links ul.footer-nav-list {
-  width:360px;
+  width: 360px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -2142,15 +2198,15 @@ footer > section#footer-others > #copyright {
 }
 @media screen and (max-width: 1200px) {
   footer > nav#footer-nav-links ul.footer-nav-list {
-    width:300px;
+    width: 300px;
   }
   @media screen and (max-width: 1000px) {
     footer > nav#footer-nav-links ul.footer-nav-list {
-      width:260px;
+      width: 260px;
     }
     @media screen and (max-width: 850px) {
       footer > nav#footer-nav-links ul.footer-nav-list {
-        width:220px;
+        width: 220px;
       }
       footer > nav#footer-nav-links ul.footer-nav-list li a {
         font-size: 13px;
@@ -2186,8 +2242,8 @@ footer > section#footer-others > #copyright {
             width: 150px;
           }
           #footer-logo {
-            top: 65px;  
-            left: 50%; 
+            top: 65px;
+            left: 50%;
             transform: translate(-50%, -50%);
             position: absolute;
           }
