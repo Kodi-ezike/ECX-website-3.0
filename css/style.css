@@ -987,7 +987,6 @@ body > #about-us > .about-section-dots > div {
 
 body > #what-we-do {
   background: transparent;
-  margin: 80px 0;
   padding-top: 150px;
   display: flex;
   flex-direction: column;
@@ -1117,7 +1116,6 @@ body > section#what-we-do > article.list-of-what-we-do > div > button i {
   }
   @media screen and (max-width: 428px) {
     body > #what-we-do {
-      margin: 0;
       padding-top: 20%;
     }
     body > section#what-we-do > article.heading h2 {
@@ -1285,30 +1283,30 @@ body > section#gallery > article:nth-child(3) {
 /* OUR TEAM SECTION */
 body > section#teams {
   width: 100%;
-  padding: 3% 0 25.5% 0;
+  padding: 3% 0 15% 0;
   overflow: hidden;
 }
 body > section#teams article {
   width: 100%;
 }
 body > section#teams article#teams-sect-heading {
-  padding: 4% 7.5%;
-  display: none;
+  display: flex;
+  padding: 4% calc((100% - 690px)/2);
   flex-direction: column;
   align-items: center;
-  margin-bottom: 9%;
+  margin-bottom: 2%;
 }
 body > section#teams article#teams-sect-heading > h2 {
   font-family: "Poppins-700";
-  font-size: 27px;
+  font-size: 48px;
   line-height: 67px;
   color: #3e3934;
   margin: 16px 0px;
 }
 body > section#teams article#teams-sect-heading > p {
   font-family: "Inter-400";
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 21px;
+  line-height: 32px;
   color: #000000;
   text-align: center;
 }
@@ -1503,7 +1501,7 @@ body > section#teams article#teams-sect-btn {
   margin-top: 3%;
 }
 #team-line {
-  bottom: 21%;
+  bottom: 11%;
   left: calc(15% + 2px);
 }
 @media screen and (min-width: 1409px) {
@@ -1516,83 +1514,104 @@ body > section#teams article#teams-sect-btn {
 }
 @media screen and (max-width: 1200px) {
   #team-line {
-    bottom: 18%;
+    bottom: 10%;
   }
-}
-@media screen and (max-width: 428px) {
-  body > section#teams {
-    padding-bottom: 15%;
-  }
-  body > section#teams article#teams-sect-heading {
-    display: flex;
-  }
-  body > section#teams div#image-panel-cont {
-    width: calc(100% - 15%);
-    padding: 0;
-    margin: 0 7.5%;
-  }
-  body > section#teams div#image-panel-cont article.image-panel {
-    margin-bottom: 5.5%;
-    width: 1000px;
-  }
-  body > section#teams div#image-panel-cont article.image-panel > div {
-    width: 187px;
-    height: 288px;
-    padding: 16px 20px;
-    box-shadow: 0px 1.54667px 0px rgba(0, 0, 0, 0.25);
-    flex: 0 0 187px;
-  }
-  body
-    > section#teams
-    div#image-panel-cont
-    article.image-panel
-    > div
-    div.round-top-rectangle {
-    width: 39px;
-    height: 6px;
-    background: #e5e5e5;
-    border-radius: 18.56px;
-    margin: 0 auto 15px auto;
-  }
-  body
-    > section#teams
-    div#image-panel-cont
-    article.image-panel
-    > div
-    div
-    > div.team-mbr-no {
-    height: 134.5%;
-    font-size: 37.12px;
-    line-height: 37px;
-    letter-spacing: -0.015em;
-    padding-bottom: 4%;
-  }
-  body
-    > section#teams
-    div#image-panel-cont
-    article.image-panel
-    > div
-    > div.team-mbr-txt
-    h2 {
-    font-family: "Nunito-700";
-    font-size: 12.3733px;
-    line-height: 15px;
-  }
-  body
-    > section#teams
-    div#image-panel-cont
-    article.image-panel
-    > div
-    > div.team-mbr-txt
-    h3 {
-    line-height: 15px;
-  }
-  body > section#teams article#teams-sect-btn {
-    margin-top: 10%;
-  }
-  body > section#teams article#teams-sect-btn > button {
-    padding-top: 14px;
-    padding-bottom: 14px;
+  @media screen and (max-width: 768px) {
+    body > section#teams article#teams-sect-heading {
+      padding: 7.5%;
+      margin-bottom: 3%;
+    }
+    body > section#teams article#teams-sect-heading > h2 {
+      font-size: 40px;
+    }
+    body > section#teams article#teams-sect-heading > p {
+      font-size: 19px;
+      line-height: 30px;
+    }
+    @media screen and (max-width: 428px) {
+      body > section#teams {
+        padding-bottom: 15%;
+      }
+      body > section#teams article#teams-sect-heading {
+        padding: 4% 7.5%;
+        margin-bottom: 9%;
+      }
+      body > section#teams article#teams-sect-heading > h2 {
+        font-size: 27px;
+      }
+      body > section#teams article#teams-sect-heading > p {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      body > section#teams div#image-panel-cont {
+        width: calc(100% - 15%);
+        padding: 0;
+        margin: 0 7.5%;
+      }
+      body > section#teams div#image-panel-cont article.image-panel {
+        margin-bottom: 5.5%;
+        width: 1000px;
+      }
+      body > section#teams div#image-panel-cont article.image-panel > div {
+        width: 187px;
+        height: 288px;
+        padding: 16px 20px;
+        box-shadow: 0px 1.54667px 0px rgba(0, 0, 0, 0.25);
+        flex: 0 0 187px;
+      }
+      body
+        > section#teams
+        div#image-panel-cont
+        article.image-panel
+        > div
+        div.round-top-rectangle {
+        width: 39px;
+        height: 6px;
+        background: #e5e5e5;
+        border-radius: 18.56px;
+        margin: 0 auto 15px auto;
+      }
+      body
+        > section#teams
+        div#image-panel-cont
+        article.image-panel
+        > div
+        div
+        > div.team-mbr-no {
+        height: 134.5%;
+        font-size: 37.12px;
+        line-height: 37px;
+        letter-spacing: -0.015em;
+        padding-bottom: 4%;
+      }
+      body
+        > section#teams
+        div#image-panel-cont
+        article.image-panel
+        > div
+        > div.team-mbr-txt
+        h2 {
+        font-family: "Nunito-700";
+        font-size: 12.3733px;
+        line-height: 15px;
+      }
+      body
+        > section#teams
+        div#image-panel-cont
+        article.image-panel
+        > div
+        > div.team-mbr-txt
+        h3 {
+        line-height: 15px;
+      }
+      body > section#teams article#teams-sect-btn {
+        margin-top: 10%;
+      }
+      body > section#teams article#teams-sect-btn > button {
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+    }
   }
 }
 /* OUR ACHIEVEMENT SECTION */
@@ -1775,7 +1794,7 @@ body > #our-achievements > #ach-cont div.ach div > span {
 /* CONTACT US SECTION */
 body > section#contact {
   width: 100%;
-  padding: 9% 0 18% 0;
+  padding: 9% 0 15% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2122,7 +2141,7 @@ body > section#contact > article:nth-child(2) > div > div > address {
 footer {
   background-color: #f0f8ff;
   width: 100%;
-  padding: 10% 0;
+  padding: 7% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
