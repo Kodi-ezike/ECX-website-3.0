@@ -434,10 +434,51 @@ body > #about-us > article:nth-child(1) {
   /*padding: 8.5% 0 6% 0;*/
   padding: 10.8% 0 6% 0;
 }
-body > #about-us > article:nth-child(1) h2 {
-  font-family: "Satoshi-900";
+/* responsive font style for all h2 elements */
+h2 {
   font-size: 48px;
   line-height: 67px;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 42px;
+    line-height: 60px;
+  }
+  @media screen and (max-width: 600px) {
+    h2 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media screen and (max-width: 428px) {
+      h2 {
+        font-size: 37px;
+        line-height: 47px;
+      }
+      @media screen and (max-width: 400px)  {
+        h2 {
+          font-size: 31px;
+          line-height: 40px;
+          padding: 0 5%;
+        }
+        @media screen and (max-width: 338px)  {
+          h2 {
+            font-size: 27px;
+            line-height: 35px;
+            
+          }
+          @media screen and (max-width: 280px)  {
+            h2 {
+              font-size: 24px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+body > #about-us > article:nth-child(1) h2 {
+  font-family: "Satoshi-900";
   margin-bottom: 10px;
   text-align: center;
   color: #3e3934;
@@ -454,11 +495,6 @@ body > #about-us > article:nth-child(1) p {
     width: 60%;
     padding: 16% 0 9% 0;
   }
-  body > #about-us article:nth-child(1) h2 {
-    font-family: "Satoshi-900";
-    font-size: 42px;
-    line-height: 60px;
-  }
   body > #about-us article:nth-child(1) p {
     font-family: "Inter-400";
     font-size: 18px;
@@ -473,11 +509,6 @@ body > #about-us > article:nth-child(1) p {
         width: 70%;
         padding: 28% 0 15% 0;
       }
-      body > #about-us article:nth-child(1) h2 {
-        font-family: "Satoshi-900";
-        font-size: 40px;
-        line-height: 50px;
-      }
       @media screen and (max-width: 428px) {
         body > #about-us {
           width: 100%;
@@ -490,11 +521,6 @@ body > #about-us > article:nth-child(1) p {
         }
         body > #about-us article:nth-child(1) {
           width: 96%;
-        }
-        body > #about-us article:nth-child(1) h2 {
-          font-family: "Satoshi-900";
-          font-size: 27px;
-          line-height: 35px;
         }
         body > #about-us article:nth-child(1) p {
           font-family: "Inter-400";
@@ -509,11 +535,6 @@ body > #about-us > article:nth-child(1) p {
           }
           body > #about-us article:nth-child(1) {
             width: 96%;
-          }
-          body > #about-us article:nth-child(1) h2 {
-            font-family: "Satoshi-900";
-            font-size: 24px;
-            line-height: 30px;
           }
           body > #about-us article:nth-child(1) p {
             font-family: "Inter-400";
@@ -999,8 +1020,6 @@ body > section#what-we-do > article.heading {
 }
 body > section#what-we-do > article.heading h2 {
   font-family: "Satoshi-900";
-  font-size: 48px;
-  line-height: 67px;
   text-align: center;
   color: #3e3934;
   margin-bottom: 16px;
@@ -1117,10 +1136,7 @@ body > section#what-we-do > article.list-of-what-we-do > div > button i {
   @media screen and (max-width: 428px) {
     body > #what-we-do {
       padding-top: 20%;
-      padding-bottom: 15%;
-    }
-    body > section#what-we-do > article.heading h2 {
-      font-size: 27px;
+      padding-bottom: 22%;
     }
     body > section#what-we-do > article.heading p {
       font-size: 16px;
@@ -1144,8 +1160,6 @@ body > section#gallery > article:nth-child(1) {
 }
 body > section#gallery > article:nth-child(1) h2 {
   font-family: "Satoshi-900";
-  font-size: 48px;
-  line-height: 67px;
   text-align: center;
   color: #000000;
   margin-bottom: 2%;
@@ -1211,9 +1225,6 @@ body > section#gallery > article:nth-child(3) {
   body > section#gallery {
     padding: 16.5% 0 17.5% 0;
   }
-  body > section#gallery > article:nth-child(1) h2 {
-    font-size: 27px;
-  }
   body > section#gallery > article:nth-child(1) div.gallery-img-ctrl {
     display: none;
   }
@@ -1241,27 +1252,15 @@ body > section#gallery > article:nth-child(3) {
     body > section#gallery {
       padding: 17.5% 0 20% 0;
     }
-    body > section#gallery > article:nth-child(1) h2 {
-      font-size: 36px;
-    }
     @media screen and (max-width: 400px) {
-      body > section#gallery > article:nth-child(1) h2 {
-        font-size: 30px;
-      }
       body > section#gallery > article#image-container {
         height: 350px;
       }
       @media screen and (max-width: 338px) {
-        body > section#gallery > article:nth-child(1) h2 {
-          font-size: 26px;
-        }
         body > section#gallery > article#image-container {
           height: 280px;
         }
         @media screen and (max-width: 280px) {
-          body > section#gallery > article:nth-child(1) h2 {
-            font-size: 23px;
-          }
           body > section#gallery > article#image-container {
             height: 250px;
           }
@@ -1299,8 +1298,6 @@ body > section#teams article#teams-sect-heading {
 }
 body > section#teams article#teams-sect-heading > h2 {
   font-family: "Poppins-700";
-  font-size: 48px;
-  line-height: 67px;
   color: #3e3934;
   margin: 16px 0px;
 }
@@ -1522,9 +1519,6 @@ body > section#teams article#teams-sect-btn {
       padding: 7.5%;
       margin-bottom: 3%;
     }
-    body > section#teams article#teams-sect-heading > h2 {
-      font-size: 40px;
-    }
     body > section#teams article#teams-sect-heading > p {
       font-size: 19px;
       line-height: 30px;
@@ -1536,9 +1530,6 @@ body > section#teams article#teams-sect-btn {
       body > section#teams article#teams-sect-heading {
         padding: 4% 7.5%;
         margin-bottom: 9%;
-      }
-      body > section#teams article#teams-sect-heading > h2 {
-        font-size: 27px;
       }
       body > section#teams article#teams-sect-heading > p {
         font-size: 16px;
@@ -1631,10 +1622,7 @@ body > #our-achievements > article:nth-child(1) {
 }
 body > #our-achievements > article:nth-child(1) h2 {
   font-family: "Poppins-700", Arial;
-  font-size: 35px;
   color: #3e3934;
-  font-size: 36px;
-  line-height: 67px;
   margin: 0 0 16px 0;
 }
 body > #our-achievements > article:nth-child(1) p {
@@ -1733,11 +1721,6 @@ body > #our-achievements > #ach-cont div.ach div > span {
       flex-direction: column;
       align-items: center;
     }
-    body > #our-achievements > article:nth-child(1) h2 {
-      font-size: 27px;
-      line-height: 47px;
-      margin: 0;
-    }
     body > #our-achievements > article:nth-child(1) p {
       width: 83%;
       font-family: "Nunito-400";
@@ -1809,8 +1792,6 @@ body > section#contact > article:nth-child(1) {
 }
 body > section#contact > article:nth-child(1) > h2 {
   font-family: "Satoshi-900";
-  font-size: 48px;
-  line-height: 67px;
   color: #3e3934;
   margin: 0 0 16px 0;
 }
@@ -1960,10 +1941,6 @@ body > section#contact > article:nth-child(2) > div > div > address {
           body > section#contact > article:nth-child(1) {
             width: 78%;
             margin-bottom: 8.5%;
-          }
-          body > section#contact > article:nth-child(1) > h2 {
-            font-size: 36px;
-            line-height: 45px;
           }
           body > section#contact > article:nth-child(1) > p {
             font-size: 18px;
