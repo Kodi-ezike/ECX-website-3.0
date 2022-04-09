@@ -984,10 +984,10 @@ body > #about-us > .about-section-dots > div {
   }
 }
 /* WHAT WE DO SECTION */
-
 body > #what-we-do {
   background: transparent;
   padding-top: 150px;
+  padding-bottom: 150px;
   display: flex;
   flex-direction: column;
 }
@@ -1117,6 +1117,7 @@ body > section#what-we-do > article.list-of-what-we-do > div > button i {
   @media screen and (max-width: 428px) {
     body > #what-we-do {
       padding-top: 20%;
+      padding-bottom: 15%;
     }
     body > section#what-we-do > article.heading h2 {
       font-size: 27px;
@@ -2203,7 +2204,7 @@ footer > section#footer-others > div#socials img {
   padding: 10px 10px;
   image-rendering: pixelated;
 }
-footer > section#footer-others > div#socials img:nth-child(2) {
+footer > section#footer-others > div#socials a:nth-child(2) {
   margin: 0 16px;
 }
 footer > section#footer-others > #copyright strong {
