@@ -56,7 +56,7 @@ CALLING FONTS FROM THE ../ASSETS FOLDER (fontface)
     box-sizing: border-box;
     font-style: normal;
     text-decoration: none;
-    list-style: none;
+    /* list-style: none; */
 }
 html,
 body {

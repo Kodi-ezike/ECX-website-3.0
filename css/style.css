@@ -57,7 +57,7 @@ body > header.hero > nav > ul a {
   color: #ffffff;
 }
 body > header.hero > nav > ul li:nth-last-child(1) {
-  background: #3e84f8;
+  background: #FFBD08;
   color: #ffffff;
   padding: 18px 32px;
   border-radius: 5px;
@@ -80,11 +80,14 @@ body > header.hero > #hero-sect #hero-txt {
 }
 body > header.hero > #hero-sect #hero-txt h1 {
   font-family: "Satoshi-900";
-  line-height: 80px;
-  font-size: 72px;
+  line-height: 85px;
+  font-size: 66px;
+}
+body > header.hero > #hero-sect #hero-txt h1 i{
+  color: #DBDBFE;
 }
 body > header.hero > #hero-sect #hero-txt p {
-  margin: 1.6% 0 8% 0;
+  margin: 20px 0;
   font-family: "Inter-400";
   line-height: 31px;
   font-size: 21px;
@@ -314,9 +317,6 @@ body > header.hero > #hero-sect #hero-txt button i {
     body > header.hero > nav > ul {
       display: none;
     }
-    body > #about-us article:nth-child(2) {
-      overflow-x: scroll;
-    }
     body > header.hero > #hero-sect {
       width: 100%;
       display: flex;
@@ -408,344 +408,136 @@ body > header.hero > #hero-sect #hero-txt button i {
     margin-right: 12px;
   }
 }
-#hero-line {
-  position: absolute;
-  top: 22%;
-  left: 15%;
-}
-#hero-line {
-  position: absolute;
-  top: 22%;
-  left: 15%;
-}
+
+
 /* 
 
-
-
   ABOUT US SECTION
- 
-  
   
 */
+
+
 body > #about-us {
-  background: rgba(62, 132, 248, 0.06);
-  display: flex;
-  position: relative;
-  flex-direction: column;
+  background: #ffffff;
   align-items: center;
+  padding:120px ;
 }
-/*
-  ABOUT SECTION ARTICLE 1:
-  contains the header and paragraph of the about page
-*/
-body > #about-us > article:nth-child(1) {
-  width: 52%;
-  /*padding: 8.5% 0 6% 0;*/
-  padding: 10.8% 0 6% 0;
-}
-body > #about-us > article:nth-child(1) h2 {
+body > #about-us >  h2 {
   font-family: "Satoshi-900";
-  font-size: 48px;
+  font-size: 36px;
   line-height: 67px;
   margin-bottom: 10px;
   text-align: center;
   color: #3e3934;
 }
-body > #about-us > article:nth-child(1) p {
-  font-family: "Inter-400";
-  font-size: 21px;
-  line-height: 31px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.8);
-}
-@media screen and (max-width: 768px) {
-  body > #about-us article:nth-child(1) {
-    width: 60%;
-    padding: 16% 0 9% 0;
-  }
-  body > #about-us article:nth-child(1) h2 {
-    font-family: "Satoshi-900";
-    font-size: 42px;
-    line-height: 60px;
-  }
-  body > #about-us article:nth-child(1) p {
-    font-family: "Inter-400";
-    font-size: 18px;
-    line-height: 28px;
-  }
-  @media screen and (max-width: 700px) {
-    body > #about-us article:nth-child(1) {
-      width: 65%;
-    }
-    @media screen and (max-width: 500px) {
-      body > #about-us article:nth-child(1) {
-        width: 70%;
-        padding: 28% 0 15% 0;
-      }
-      body > #about-us article:nth-child(1) h2 {
-        font-family: "Satoshi-900";
-        font-size: 40px;
-        line-height: 50px;
-      }
-      @media screen and (max-width: 428px) {
-        body > #about-us {
-          width: 100%;
-          margin: 0;
-          padding: 0 2%;
-        }
-        body > #about-us article {
-          margin: 0;
-          padding: 0;
-        }
-        body > #about-us article:nth-child(1) {
-          width: 96%;
-        }
-        body > #about-us article:nth-child(1) h2 {
-          font-family: "Satoshi-900";
-          font-size: 27px;
-          line-height: 35px;
-        }
-        body > #about-us article:nth-child(1) p {
-          font-family: "Inter-400";
-          font-size: 16px;
-          line-height: 25px;
-        }
-        @media screen and (max-width: 291px) {
-          body > #about-us {
-            width: 100%;
-            margin: 0;
-            padding: 0 2%;
-          }
-          body > #about-us article:nth-child(1) {
-            width: 96%;
-          }
-          body > #about-us article:nth-child(1) h2 {
-            font-family: "Satoshi-900";
-            font-size: 24px;
-            line-height: 30px;
-          }
-          body > #about-us article:nth-child(1) p {
-            font-family: "Inter-400";
-            font-size: 14px;
-            line-height: 22px;
-          }
-        }
-      }
-    }
-  }
-}
-/*
-  ABOUT SECTION ARTICLE 2:
-  contains the four cards(rectangular boxes) of the about page
-*/
-
-body > #about-us article:nth-child(2) {
+body > #about-us article {
   display: flex;
-  row-gap: 15px;
-  column-gap: 2px;
-  margin: 0 0 13% 0;
-  padding: 0 4%;
-  width: 100%;
+  justify-content: space-between;
 }
-@media screen and (min-width: 769px) {
-  body > #about-us article:nth-child(2) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-body > #about-us article:nth-child(2) > div {
-  /*width: 400px;*/
-  width: 300px;
+body > #about-us article > div {
+  width: 48%;
   position: relative;
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 49px 47px rgba(0, 0, 0, 0.07);
+  background: #ffffff;
   border-radius: 8px;
+  box-shadow: 0px -7px 70px rgba(0, 0, 0, 0.05), 0px 48px 48px rgba(0, 0, 0, 0.09), 0px 12px 27px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
   padding: 32px;
   background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 49px 47px rgba(0, 0, 0, 0.07);
 }
-body > #about-us > article:nth-child(2) > div > h3 {
+body > #about-us > article > div > h3 {
   font-family: "Satoshi-700";
   font-size: 24px;
   line-height: 31px;
   color: #3e3934;
   margin: 16px 0;
 }
-body > #about-us > article:nth-child(2) > div > p {
+body > #about-us > article > div > p {
   font-family: "Inter-400";
-  font-size: 18px;
+  font-size: 15px;
   line-height: 31px;
   color: #000000;
   margin-bottom: 32px;
 }
-body > #about-us > article:nth-child(2) > div > button {
+body > #about-us > article > div > button {
   display: flex;
   align-items: center;
   border-radius: 8px;
   line-height: 22px;
   letter-spacing: -0.015em;
   padding: 18px 16px;
+  margin: auto;
 }
-body > #about-us > article:nth-child(2) > div > button i {
+body > #about-us > article > div > button i {
   font-size: 16px;
   color: #ffffff;
   margin-right: 5px;
   font-family: "Nunito-400";
 }
-body > #about-us > article:nth-child(2) > div:nth-child(1) > button,
-body > #about-us > article:nth-child(2) > div:nth-child(3) > button {
+body > #about-us > article > div:nth-child(1) > button{
   background: #3e84f8;
 }
-body > #about-us > article:nth-child(2) > div:nth-child(2) > button {
-  background: #ffbd08;
-}
-body > #about-us > article:nth-child(2) > div:nth-child(4) > button {
+body > #about-us > article > div:nth-child(2)> button {
   background: #ed4239;
 }
 
-body > #about-us > article:nth-child(2) > div img.about-sect-line {
-  position: absolute;
-  bottom: -30px;
-  left: 0;
-}
-body
-  > #about-us
-  > article:nth-child(2)
-  > div
-  img.about-sect-line:nth-last-child(1) {
-  left: 100%;
-}
 @media screen and (max-width: 768px) {
-  body > #about-us article:nth-child(2) {
+  body > #about-us  {
+    padding: 60px;
+  }
+  body > #about-us article {
     display: flex;
-    column-gap: 20px;
-    margin: 0;
-    padding: 0 5%;
-    height: 450px;
-    overflow-x: scroll;
+    flex-direction: column;
   }
-  body > #about-us article:nth-child(2)::-webkit-scrollbar {
-    display: none;
-  }
-  body > #about-us article:nth-child(2) > div {
-    /*width: 400px;*/
-    flex: 0 0 343px;
-    height: 368px;
+  body > #about-us article > div {
+    width: 80%;
     position: relative;
-    border-radius: 8px;
-    padding: 32px;
+    margin:20px auto;
   }
-  body > #about-us > article:nth-child(2) > div img.about-sect-line {
-    display: none;
-  }
-  body > #about-us > article:nth-child(2) > div > img.ab-rect-box-icon {
+  body > #about-us > article > div > img.ab-rect-box-icon {
     width: 48px;
     height: auto;
   }
-  body > #about-us > article:nth-child(2) > div > h3 {
-    font-family: "Satoshi-700";
+  body > #about-us > article > div > h3 {
     font-size: 24px;
     line-height: 36px;
-    color: #3e3934;
     margin: 16px 0;
   }
-  body > #about-us > article:nth-child(2) > div > p {
-    font-family: "Inter-400";
+  body > #about-us > article > div > p {
     font-size: 16px;
     line-height: 25px;
-    color: #000000;
     margin-bottom: 32px;
   }
-  body > #about-us > article:nth-child(2) > div > button {
-    display: flex;
-    align-items: center;
-    border-radius: 8px;
-    line-height: 22px;
-    letter-spacing: -0.015em;
-    padding: 18px 16px;
+  body > #about-us > article > div > button {
+    padding: 10px 16px;
   }
-  body > #about-us > article:nth-child(2) > div > button i {
+  body > #about-us > article > div > button i {
     font-size: 14px;
   }
-  body > #about-us > article:nth-child(2) > div > button img {
+  body > #about-us > article > div > button img {
     width: 15px;
   }
-  @media screen and (max-width: 449px) {
-    body > #about-us article:nth-child(2) > div {
-      flex: 0 0 331px;
-    }
-    @media screen and (max-width: 409px) {
-      body > #about-us article:nth-child(2) > div {
-        flex: 0 0 319px;
-      }
-      @media screen and (max-width: 385px) {
-        body > #about-us article:nth-child(2) > div {
-          flex: 0 0 280px;
-        }
-        @media screen and (max-width: 349px) {
-          body > #about-us article:nth-child(2) > div {
-            flex: 0 0 260px;
-            padding: 28px;
-          }
-          body > #about-us > article:nth-child(2) > div > h3 {
-            font-size: 23px;
-            line-height: 30px;
-            margin: 16px 0;
-          }
-          body > #about-us > article:nth-child(2) > div > p {
-            margin-bottom: 46px;
-          }
-          body > #about-us > article:nth-child(2) > div > button {
-            padding: 14px 16px;
-          }
-          @media screen and (max-width: 320px) {
-            body > #about-us article:nth-child(2) > div {
-              flex: 0 0 240px;
-              padding: 20px;
-            }
-            body > #about-us > article:nth-child(2) > div > h3 {
-              margin: 15px 0;
-            }
-            body > #about-us > article:nth-child(2) > div > p {
-              margin-bottom: 45px;
-            }
-            body > #about-us > article:nth-child(2) > div > button {
-              padding: 13px 16px;
-            }
-            @media screen and (max-width: 302px) {
-              body > #about-us article:nth-child(2) {
-                display: flex;
-                column-gap: 9.5px;
-                margin: 0;
-                padding: 0 3.5%;
-                height: 400px;
-              }
-              body > #about-us article:nth-child(2) > div {
-                flex: 0 0 220px;
-                height: 330px;
-                padding: 18px;
-              }
-              body > #about-us > article:nth-child(2) > div > h3 {
-                margin: 14px 0;
-                font-size: 21px;
-              }
-              body > #about-us > article:nth-child(2) > div > p {
-                font-size: 15px;
-                line-height: 22px;
-                margin-bottom: 38px;
-              }
-            }
-          }
-        }
-      }
-    }
+
+}
+@media screen and (max-width: 500px) {
+  body > #about-us  {
+    padding: 60px 20px;
+  }
+  body > #about-us >  h2 {
+    font-family: "Satoshi-900";
+    font-size: 32px;
+    line-height: 40px;
+  }
+  body > #about-us article > div {
+    padding: 32px 15px;
   }
 }
+
 /*
   ABOUT SECTION ARTICLE 3:
   contains the three cards(square boxes with svg images) of the about page
 */
-body > #about-us > article:nth-child(3) {
+/* body > #about-us > article:nth-child(3) {
   width: 100%;
 }
 body > #about-us > article:nth-child(3) > div {
@@ -998,37 +790,42 @@ body > #about-us > .about-section-dots > div {
       }
     }
   }
-}
+} */
+
+
+
+
 /*
 
-
-
 WHAT WE DO SECTION
-
-
 
 */
 
 body > #what-we-do {
-  background: transparent;
-  margin: 80px 0;
-  padding-top: 150px;
+  padding: 120px;
   display: flex;
   flex-direction: column;
 }
 body > section#what-we-do > article.heading {
   position: relative;
-  width: 690px;
+  width: 50%;
   align-self: center;
-  margin-bottom: 70px;
 }
 body > section#what-we-do > article.heading h2 {
   font-family: "Satoshi-900";
-  font-size: 48px;
+  font-size: 36px;
   line-height: 67px;
   text-align: center;
   color: #3e3934;
   margin-bottom: 16px;
+}
+body > section#what-we-do > article.heading h3 {
+  font-family: "Satoshi-900";
+  font-size: 32px;
+  line-height: 67px;
+  margin-top: 64px;
+  text-align: center;
+  color: #3E3934;
 }
 body > section#what-we-do > article.heading p {
   font-family: "Inter-400";
@@ -1039,50 +836,45 @@ body > section#what-we-do > article.heading p {
 }
 body > section#what-we-do > article.list-of-what-we-do {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 1px;
-  row-gap: 18px;
-  padding: 0 8%;
-  width: auto;
+  justify-content: space-between;
+  padding:20px 0px;
 }
 body > section#what-we-do > article.list-of-what-we-do > div {
-  width: 360px;
-  height: 545px;
+  width: 48%;
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: flex-start;
   padding: 32px;
-  background: rgba(255, 255, 255, 0.3);
+  background: #ffffff;
   box-shadow: 0px 49px 47px rgba(0, 0, 0, 0.07);
   border-radius: 8px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 0px 0px;
 }
 body > section#what-we-do > article.list-of-what-we-do > div h3 {
-  margin: 32px 0;
+  margin: 20px 0;
   font-size: 24px;
   line-height: 32px;
   color: #3e3934;
   font-family: "Satoshi-700";
 }
+
 body > section#what-we-do > article.list-of-what-we-do > div ul {
   margin-left: 17px;
-  padding: 0 15px;
-  font-size: 21px;
-  line-height: 38px;
+  padding:0px 15px 80px;
+  line-height: 32px;
   color: #000000;
   font-family: "Inter-400";
 }
+
 body > section#what-we-do > article.list-of-what-we-do > div button {
   font-size: 16px;
   line-height: 22px;
   display: flex;
   align-items: center;
   text-align: center;
+  position: absolute;
+  bottom: 32px;
   padding: 18px 16px;
-  margin: 32px 0;
   border-radius: 8px;
 }
 body
@@ -1103,15 +895,9 @@ body
   > article.list-of-what-we-do
   > div:nth-child(4)
   button {
-  background: #ffbd08;
+  background: #ED4239;
 }
-body
-  > section#what-we-do
-  > article.list-of-what-we-do
-  > div:nth-child(3)
-  button {
-  background: #ed4239;
-}
+
 body > section#what-we-do > article.list-of-what-we-do > div > button i {
   font-size: 16px;
   color: #ffffff;
@@ -1119,46 +905,256 @@ body > section#what-we-do > article.list-of-what-we-do > div > button i {
   letter-spacing: -0.015em;
   font-family: "Nunito-400";
 }
-/*RESPONSIVENESS ISH*/
-@media screen and (max-width: 858px) {
-  body > section#what-we-do > article.list-of-what-we-do {
-    flex-wrap: nowrap;
+.program-heading{
+  font-family: 'Inter-400';
+  font-size: 32px;
+  line-height: 67px;
+  text-align: center;
+  color: #3E3934;
+  margin: 20px 0;
+}
+.programs{
+  display: flex;
+  justify-content: space-between;
+}
+.programs div{
+  width: 30%;
+  padding: 32px;
+  height: 226px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 49px 47px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+}
+.programs h4{
+  font-family: 'Inter-400';
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #3E3934;
+}
+.programs button{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 32px;
+  padding: 18px 16px;
+  border-radius: 8px;
+}
+.programs button i {
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 5px;
+  letter-spacing: -0.015em;
+  font-family: 'Inter-400';
+}
+#design-btn{
+  background: #4B4BFB;
+}
+#internship-btn{
+  background: #802827;
+}
+#hackathon-btn{
+  background: #37AD51;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  body > #what-we-do {
+    padding: 120px 60px;
   }
-  body > section#what-we-do > article.list-of-what-we-do {
-    overflow-x: scroll;
+  body > section#what-we-do > article.heading {
+    width: 100%;
   }
-  body > section#what-we-do > article.list-of-what-we-do::-webkit-scrollbar {
-    display: none;
+  body > section#what-we-do > article.heading p {
+    font-size: 16px;
   }
-  @media screen and (max-width: 768px) {
-    body > section#what-we-do > article.heading {
-      width: 90%;
-    }
+  body > section#what-we-do > article.list-of-what-we-do > div {
+    padding: 32px 15px;
   }
-  @media screen and (max-width: 428px) {
-    body > #what-we-do {
-      margin: 0;
-      padding-top: 20%;
-    }
-    body > section#what-we-do > article.heading h2 {
-      font-size: 27px;
-    }
-    body > section#what-we-do > article.heading p {
-      font-size: 16px;
-      line-height: 25px;
-    }
+  body > section#what-we-do > article.list-of-what-we-do > div .ab-rect-box-icon{
+    width: 48px;
+    height: auto;
+  }
+  body > section#what-we-do > article.list-of-what-we-do > div ul {
+    font-size: 14px;
+  }
+  body > section#what-we-do > article.list-of-what-we-do > div button {
+    padding: 10px 16px;
+  }
+  .program-heading{
+    font-size: 28px;
+  }
+  .programs div{
+    height: 200px;
+    padding: 32px 10px;
+  }
+  .programs h4{
+    font-size: 20px;
+  }
+  .programs button{
+    padding: 10px 10px;
   }
 }
-/* MIKE'S CODE */
+
+@media screen and (max-width: 600px) {
+  body > #what-we-do {
+    padding: 120px 40px;
+  }
+  body > section#what-we-do > article.heading h2 {
+    font-size: 30px;
+  }
+  body > section#what-we-do > article.list-of-what-we-do {
+    display: flex;
+    flex-direction: column;
+    padding:20px 0px;
+  }
+  body > section#what-we-do > article.list-of-what-we-do > div {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .programs{
+    display: flex;
+    flex-direction: column;
+  }
+  .programs div{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+}
+
+
 /*
 
-
-
-GALLERY SECTION
-
-
+OUR ACHIEVEMENT SECTION
 
 */
+
+#our-achievements{
+  padding: 120px;
+  background: #ffffff;
+  font-family: 'Inter-400';
+  text-align: center;
+}
+.achievement-heading{
+  font-size: 36px;
+  line-height: 100%;
+  color: #3E3934;
+}
+.achievement-text{
+  font-size: 21px;
+  line-height: 42px;
+  color: #2B2B2B;
+}
+
+.stats{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 50px 0;
+}
+.stats div{ 
+  width: 30%;
+  height: 140px;
+  box-shadow: 0px 27px 47px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  padding: 20px 0px 24px;
+}
+.stats-text{
+  font-size: 24px;
+}
+.number{
+  font-size: 40px;
+  line-height: 80px;
+}
+#registered{
+  border: 2px solid #4284F7;
+}
+#trained{
+  border: 2px solid #FFBD08;
+}
+#certified{
+  border: 2px solid #EF4239;
+}
+.stats-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4284F7;
+  text-decoration: 1px underline #4284F7;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+.stats-link img{
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .stats{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #our-achievements{
+    padding: 120px 60px;
+  }
+  .stats div{ 
+    height: 100px;
+  }
+  .stats-text{
+    font-size: 18px;
+  }
+  .number{
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #our-achievements{
+    padding: 120px 40px;
+  }
+  .achievement-heading{
+    font-size: 28px;
+  }
+  .achievement-text{
+    font-size: 16px;
+  }
+  .stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0 50px;
+  }
+  .stats div{
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+  }
+  .number{
+    line-height: 80px;
+  }
+}
+
+
+
+
+
+
+/* 
+GALLERY SECTION
+ */
+
+
 body > section#gallery {
   align-items: center;
   width: 100%;
@@ -1304,467 +1300,201 @@ body > section#gallery > article:nth-child(3) {
     }
   }
 }
+
 /*
-
-
 
 OUR TEAM SECTION
 
-
-
 */
-body > section#teams {
-  width: 100%;
-  padding: 3% 0 25.5% 0;
-  overflow: hidden;
+
+#teams{
+  background: #F3F8FF;
+  padding: 120px 120px 80px 120px  ;
 }
-body > section#teams article {
-  width: 100%;
-}
-body > section#teams article#teams-sect-heading {
-  padding: 4% 7.5%;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 9%;
-}
-body > section#teams article#teams-sect-heading > h2 {
-  font-family: "Poppins-700";
-  font-size: 27px;
-  line-height: 67px;
-  color: #3E3934;
-  margin: 16px 0px;
-}
-body > section#teams article#teams-sect-heading > p {
-  font-family: "Inter-400";
-  font-size: 16px;
-  line-height: 25px;
-  color: #000000;
+#teams-heading h2{
+  font-family: 'Poppins-700';
+  font-size: 36px;
   text-align: center;
+  color: #3E3934;
 }
-body > section#teams div#image-panel-cont {
-  width: auto;
-  margin: 0 7.5%;
-  overflow-x: auto;
+#teams-heading p{
+  font-family: 'Nunito-400';
+  font-size: 21px;
+  text-align: center;
+  color: #000000;
 }
-body > section#teams div#image-panel-cont article.image-panel {
+.team-members{
   display: flex;
-  column-gap: 0;
-  margin-bottom: 4.5%;
+  flex-wrap: wrap;
 }
-body > section#teams div#image-panel-cont::-webkit-scrollbar {
-  height: 11px;
+#row-1{
+  display: flex;
+  justify-content: center;
 }
-body > section#teams div#image-panel-cont::-webkit-scrollbar-button {
-  display: none;
-}
-body > section#teams div#image-panel-cont::-webkit-scrollbar {
-  height: 11px;
-}
-body > section#teams div#image-panel-cont::-webkit-scrollbar-track {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: rgba(1, 95, 157, 0.2);
-}
-body > section#teams div#image-panel-cont::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: rgba(1, 95, 157, 0.85);
-}
-body > section#teams div#image-panel-cont article.image-panel > div {
-  width: 240px;
-  height: 373px;
-  padding: 21px 26px;
-  background: #ffffff;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
-  flex: 0 0 240px;
-}
-body > section#teams div#image-panel-cont article.image-panel > div div.round-top-rectangle {
-  width: 51px;
-  height: 8px;
-  background: #e5e5e5;
-  border-radius: 24px;
-  margin: 0 auto 21px auto;
-}
-body > section#teams div#image-panel-cont article.image-panel > div div:nth-child(2) {
+.team-mate{
   position: relative;
+  width: 22%;
+  background: #ffffff;
+  margin: 1.5%;
+  margin-bottom: 50px;
+  padding: 24px;
+  box-shadow: 0px 48px 48px rgba(0, 0, 0, 0.09), 0px 12px 27px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-body > section#teams div#image-panel-cont article.image-panel > div div > img {
+.role{
+  height: 35px;
   width: 100%;
-  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Inter-400';
+  font-size: 14px;
+  margin-bottom: 5px ;
+  color: #26267E; 
 }
-body > section#teams div#image-panel-cont article.image-panel > div div > div.team-mbr-no {
+.image-panel{
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+.image-panel img{
+  width: 100%;
+  height: 172px;
+}
+.team-member-name{
+  font-family: 'Inter-400';
+  color: #4D4D4D;
+}
+.team-lead{
+  font-family: 'Inter-400';
+  color: #4D4D4D;
+}
+.team-mbr-no{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 33%;
-  height: 134.5%;
-  mix-blend-mode: multiply;
+  width: 30%;
+  height: 215px;
+  left: 0px;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   font-family: "DM-Sans-500";
-  font-size: 48px;
+  font-size: 32px;
+  color: #ffffff;
+  mix-blend-mode: multiply;
+}
+#one, #four, #seven, #ten{
+  background: rgba(62, 132, 248, 0.8);
+}
+#two, #five, #eight{
+  background: #FFCF4C;
+}
+#three, #six, #nine{
+  background: rgba(237, 66, 57, 0.8);
+}
+.team-mate button{
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #4B4BFB;
+  border: 1px solid #4B4BFB;
+  font-family: "DM-Sans-500";
+  outline: 1px solid #4B4BFB;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.volunteer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 32px;
+  gap: 8px;
+  width: 258px;
+  height: 60px;
+  background: #3E84F8;
+  border-radius: 8px;
+  margin: auto;
+}
+.volunteer i{
+  font-family: 'Inter-400';
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
   color: #ffffff;
 }
-body
-  > section#teams
-  article.image-panel:nth-child(1)
-  > div:nth-child(1)
-  div
-  > div.team-mbr-no,
-body
-  > section#teams
-  article.image-panel:nth-child(1)
-  > div:nth-child(4)
-  div
-  > div.team-mbr-no,
-body
-  > section#teams
-  article.image-panel:nth-child(2)
-  > div:nth-child(3)
-  div
-  > div.team-mbr-no {
-  background: #ffbd08;
-}
-body
-  > section#teams
-  article.image-panel:nth-child(1)
-  > div:nth-child(2)
-  div
-  > div.team-mbr-no,
-body
-  > section#teams
-  article.image-panel:nth-child(2)
-  > div:nth-child(1)
-  div
-  > div.team-mbr-no,
-body
-  > section#teams
-  article.image-panel:nth-child(2)
-  > div:nth-child(4)
-  div
-  > div.team-mbr-no {
-  background: #3e84f8;
-}
-body
-  > section#teams
-  article.image-panel:nth-child(1)
-  > div:nth-child(3)
-  div
-  > div.team-mbr-no,
-body
-  > section#teams
-  article.image-panel:nth-child(1)
-  > div:nth-child(5)
-  div
-  > div.team-mbr-no,
-body
-  > section#teams
-  article.image-panel:nth-child(2)
-  > div:nth-child(2)
-  div
-  > div.team-mbr-no,
-body
-  > section#teams
-  article.image-panel:nth-child(2)
-  > div:nth-child(5)
-  div
-  > div.team-mbr-no {
-  background: #ef4239;
-}
-body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt {
-  margin-top: 44%;
-  text-align: left;
-}
-body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h2 {
-  font-family: "Satoshi-700";
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.1em;
-  color: #000000;
-}
-body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h3 {
-  font-family: "Nunito-600";
-  font-size: 12px;
-  line-height: 20px;
-  color: #b6b6b6;
-  margin: 2px 0px;
-}
-body > section#teams article#teams-sect-btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 3%;
-}
-#team-line {
-  bottom: 21%;
-  left: calc(15% + 2px);
-}
-@media screen and (min-width: 1409px) {
-  body > section#teams div#image-panel-cont::-webkit-scrollbar {
-    display: none;
-  }
-  body > section#teams article#teams-sect-btn {
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 1200px) {
-  #team-line {
-    bottom: 18%;
-  }
-}
-@media screen and (max-width: 428px) {
-  body > section#teams {
-    padding-bottom: 15%;
-  }
-  body > section#teams article#teams-sect-heading {
-    display: flex;
-  }
-  body > section#teams div#image-panel-cont {
-    width: calc(100% - 15%);
-    padding: 0;
-    margin: 0 7.5%;
-  }
-  body > section#teams div#image-panel-cont article.image-panel {
-    margin-bottom: 5.5%;
-  }
-  body > section#teams div#image-panel-cont article.image-panel > div {
-    width: 187px;
-    height: 288px;
-    padding: 16px 20px;
-    box-shadow: 0px 1.54667px 0px rgba(0, 0, 0, 0.25);
-    flex: 0 0 187px;
-  }
-  body > section#teams div#image-panel-cont article.image-panel > div div.round-top-rectangle {
-    width: 39px;
-    height: 6px;
-    background: #e5e5e5;
-    border-radius: 18.56px;
-    margin: 0 auto 15px auto;
-  }
-  body > section#teams div#image-panel-cont article.image-panel > div div > div.team-mbr-no {
-    height: 134.5%;
-    font-size: 37.12px;
-    line-height: 37px;
-    letter-spacing: -0.015em;
-    padding-bottom: 4%;
-  }
-  body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h2 {
-    font-family: "Nunito-700";
-    font-size: 12.3733px;
-    line-height: 15px;
-  }
-  body > section#teams div#image-panel-cont article.image-panel > div > div.team-mbr-txt h3 {
-    line-height: 15px;
-  }
-  body > section#teams article#teams-sect-btn {
-    margin-top: 10%;
-  }
-  body > section#teams article#teams-sect-btn > button {
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
-}
-/*
 
+@media screen and (max-width: 1024px) {
+  .team-mate{
+    width: 30%;
+    
+  }
+  
+}
 
-
-OUR ACHIEVEMENT SECTION
-
-
-
-*/
-body > #our-achievements {
-  width: 100%;
-  padding: 8% 0 12% 0;
-  background: #fff;
-  align-items: center;
-  text-align: center;
-}
-body > #our-achievements > article:nth-child(1) {
-  margin-bottom: 8%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body > #our-achievements > article:nth-child(1) h2 {
-  font-family: "Poppins-700", Arial;
-  font-size: 35px;
-  color: #3e3934;
-  font-size: 36px;
-  line-height: 67px;
-  margin: 0 0 16px 0;
-}
-body > #our-achievements > article:nth-child(1) p {
-  font-family: "Nunito-400";
-  font-size: 18px;
-  width: 669px;
-  font-size: 21px;
-  line-height: 32px;
-  text-align: center;
-  color: #000000;
-  margin: 0 0 16px 0;
-}
-body > #our-achievements > div#our-achievements-hero {
-  background-image: url(../assets/images/our-achievement-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 648px;
-}
-body > #our-achievements > #ach-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  box-shadow: 40% rgba(197, 189, 189, 0.692);
-  margin-top: -240px;
-  padding-left: 4%;
-  padding-right: 4%;
-}
-body > #our-achievements > #ach-cont div.ach {
-  width: 230px;
-  height: 504px;
-  background: #FFFFFF;
-  text-align: center;
-  box-shadow: 0px 49px 47px rgba(0, 0, 0, 0.07);
-  border-radius: 8px;
-  cursor: pointer;
-  overflow: hidden;
-  object-fit: contain;
-}
-body > #our-achievements > #ach-cont div.ach img {
-  width: auto;
-  height: 240px;
-}
-body > #our-achievements > #ach-cont div.ach div > h3 {
-  font-family: "Nunito-700";
-  width: 100%;
-  height: 88px;
-  font-size: 24px;
-  line-height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #3E3934;
-}
-body > #our-achievements > #ach-cont div.ach div > span {
-  width: 100%;
-  height: 88px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  font-family: "Sora-300";
-  font-size: 70px;
-  font-size: 64px;
-  line-height: 32px;
-}
 @media screen and (max-width: 768px) {
-  body > #our-achievements {
-    padding: 11% 0 15% 0;
+  #teams{
+    padding: 120px 60px;
   }
-  body > #our-achievements > article:nth-child(1) {
-    margin-bottom: 8%;
+  .team-members{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  body > #our-achievements > article:nth-child(1) h2 {
-    margin: 0;
+  .team-mate{
+    width: 40%;
+    margin: 2%;
+    margin-bottom: 50px;
   }
-  body > #our-achievements > article:nth-child(1) p {
-    font-family: "Nunito-400";
-    font-size: 18px;
-    width: 88.5%;
-    font-size: 21px;
-    line-height: 32px;
-    text-align: center;
-    color: #000000;
-    margin: 16px 0;
-  }
-  @media screen and (max-width: 428px) {
-    body > #our-achievements {
-      padding: 15% 0 22% 0;
-    }
-    body > #our-achievements > article:nth-child(1) {
-      margin-bottom: 8%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    body > #our-achievements > article:nth-child(1) h2 {
-      font-size: 27px;
-      line-height: 47px;
-      margin: 0;
-    }
-    body > #our-achievements > article:nth-child(1) p {
-      width: 83%;
-      font-family: "Nunito-400";
-      font-size: 16px;
-      line-height: 25px;
-      text-align: center;
-      color: #000000;
-      margin: 16px 0;
-    }
-  }
-  body > #our-achievements > div#our-achievements-hero {
-    background-image: url(../assets/images/our-achievement-bg-mb.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 648px;
-  }
-  body > #our-achievements > div#ach-cont {
-    margin-top: -178px;
-  }
-  body > #our-achievements > div#ach-cont div.ach {
-    width: 178px;
-    height: 375px;
-    box-shadow: 0px 36.3942px 34.9087px rgba(0, 0, 0, 0.07);
-    border-radius: 5.94191px;
-  }
-  body > #our-achievements > div#ach-cont div.ach img {
-    height: 178px;
-  }
-  body > #our-achievements > div#ach-cont div.ach div > h3 {
-    height: 66px;
-    font-size: 18px;
-    line-height: 24px;
-  }
-  body > #our-achievements > div#ach-cont div.ach div > span {
-    height: 66px;
-    font-size: 48px;
-    line-height: 24px;
+  
+}
+@media screen and (max-width: 650px) {
+  .team-mate{
+    width: 60%;
   }
 }
-#achieve-bottom-line {
-  bottom: 1.9%;
-  left: calc(15% + 2px);
-  z-index: 3; 
-}
-@media screen and (max-width: 1299px) {
-  #achieve-bottom-line {
-    bottom: 1.4%;
+
+@media screen and (max-width: 500px) {
+  .team-mate{
+    width: 90%;
   }
-  @media screen and (max-width: 1249px) {
-    #achieve-bottom-line {
-      bottom: 0.5%;
-    }
+  .volunteer{
+    width: 210px;
+    height: 50px;
+  }
+  .volunteer i{
+    font-size: 14px;
   }
 }
+@media screen and (max-width: 400px) {
+  #teams{
+    padding: 120px 40px 80px 40px  ;
+  }
+  .team-mate{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  #teams{
+    padding: 120px 20px 80px 20px  ;
+  }
+}
+
 /*
-
-
 
 CONTACT US SECTION
 
-
-
 */
+
 body > section#contact {
   width: 100%;
   padding: 9% 0 18% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #ffffff;
 }
 body > section#contact > article:nth-child(1) {
   width: 700px;
@@ -1775,15 +1505,15 @@ body > section#contact > article:nth-child(1) {
 }
 body > section#contact > article:nth-child(1) > h2 {
   font-family: "Satoshi-900";
-  font-size: 48px;
-  line-height: 67px;
+  font-size: 36px;
+  line-height: 36px;
   color: #3E3934;
   margin: 0 0 16px 0;
 }
 body > section#contact > article:nth-child(1) > p {
   font-family: "Nunito-400";
   font-size: 21px;
-  line-height: 32px;
+  line-height: 25px;
   text-align: center;
   color: #000000;
 }
@@ -1810,16 +1540,19 @@ body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input,
 body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input::placeholder,
 body > section#contact > article:nth-child(2) > form > textarea
  {
-  background: #FFFFFF;
+  background: #fcfcfc;
   font-size: 16px;
   line-height: 24px;
   color: #686767;
   font-family: "Nunito-400";
+  
 }
 body > section#contact > article:nth-child(2) > form > div:nth-child(1) > input {
   width: 48%;
   height: 60px;
   padding: 20px 20px;
+  border: 1px solid #808080;
+  background: #FCFCFC;
 }
 body > section#contact > article:nth-child(2) > form > textarea {
   width: 100%;
@@ -1827,6 +1560,8 @@ body > section#contact > article:nth-child(2) > form > textarea {
   margin: 32px 0px;
   padding: 20px 20px;
   resize: none;
+  border: 1px solid #808080;
+  background: #FCFCFC;
 }
 body > section#contact > article:nth-child(2) > form > div:nth-child(2) {
   display: flex;
@@ -1838,8 +1573,8 @@ body > section#contact > article:nth-child(2) > div {
   flex-direction: column;
   align-items: flex-start;
 }
-body > section#contact > article:nth-child(2) > div > div:nth-child(2) {
-  margin-top: 30%;
+.address{
+  margin-bottom: 40px;
 }
 body > section#contact > article:nth-child(2) > div > div > h3 {
   font-family: "Poppins-600";
@@ -1856,7 +1591,8 @@ body > section#contact > article:nth-child(2) > div > div > address {
   color: #000000;
 }
 #submit-btn-cnt {
-  display: flex; justify-content: flex-end;
+  display: flex; 
+  justify-content: flex-start;
 }
 @media screen and (max-width: 1214px) {
   body > section#contact > article:nth-child(2) > div {
@@ -1910,10 +1646,6 @@ body > section#contact > article:nth-child(2) > div > div > address {
             width: 78%;
             margin-bottom: 8.5%;
           }
-          body > section#contact > article:nth-child(1) > h2 {
-            font-size: 36px;
-            line-height: 45px;
-          }
           body > section#contact > article:nth-child(1) > p {
             font-size: 18px;
             line-height: 28px;
@@ -1942,9 +1674,6 @@ body > section#contact > article:nth-child(2) > div > div > address {
             height: 250px;
             margin: 18px 0px;
             padding: 15px;
-          }
-          body > section#contact > article:nth-child(2) > div > div:nth-child(2) {
-            margin-top: 25%;
           }
           body > section#contact > article:nth-child(2) > div > div > h3 {
             font-size: 21px;
@@ -1977,9 +1706,6 @@ body > section#contact > article:nth-child(2) > div > div > address {
               margin-top: 14%;
               width: 100%;
             }
-            body > section#contact > article:nth-child(2) > div > div:nth-child(2) {
-              margin-top: 11%;
-            }
             body > section#contact > article:nth-child(2) > div > div > h3 {
               font-size: 24px;
               line-height: 24px;
@@ -1990,7 +1716,6 @@ body > section#contact > article:nth-child(2) > div > div > address {
               line-height: 24px;
             }
             #submit-btn-cnt {
-              display: flex; justify-content: flex-start;
               margin-top: 5%;
             }
             @media screen and (max-width: 428px) {
@@ -2024,11 +1749,7 @@ body > section#contact > article:nth-child(2) > div > div > address {
               body > section#contact > article:nth-child(2) > form > textarea {
                 margin: 0 0 16px 0;
               }
-              body > section#contact > article:nth-child(2) > div > div:nth-child(2) {
-                margin-top: 17%;
-              }
               #submit-btn-cnt {
-                display: flex; justify-content: flex-start;
                 margin: 9% 0 1% 0;
               }
             }
@@ -2038,163 +1759,191 @@ body > section#contact > article:nth-child(2) > div > div > address {
     }
   }
 }
+
+
+/* 
+
+SUBSCRIPTION
+
+ */
+
+#subscription{
+  padding: 50px 20px;
+  background: #2958A5;
+}
+#subscription h1{
+  font-family: 'Inter-400';
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#subscription form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#subscription input{
+  padding: 20px ;
+  width: 419.98px;
+  height: 64px;
+  margin-right: 24px;
+  font-size: 16px;
+  font-family: 'Nunito-400';
+}
+#subscription input::placeholder{
+  font-size: 16px;
+  font-family: 'Nunito-400';
+}
+#subscription button{
+  width: 220px;
+  height: 64px;
+  background: #FFCA37;
+  box-shadow: 0px 18px 35px rgba(62, 132, 248, 0.23);
+  border-radius: 8px;
+  font-family: 'Nunito-600';
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px){
+  #subscription input{
+    width: 300px;
+    height: 50px;
+  }
+  #subscription button{
+  width: 220px;
+  height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #subscription input{
+    width: 250px;
+    height: 50px;
+  }
+  #subscription button{
+  width: 150px;
+  height: 50px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  #subscription form{
+    display: flex;
+    flex-direction: column;
+  }
+  #subscription input{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+  }
+  #subscription button{
+    width: 150px;
+    height: 50px;
+    margin: auto;
+  }
+}
+
+
 /*
-
-
 
 OUR FOOTER SECTION
 
-
-
 */
-footer {
-  background-color: #f0f8ff;
-  width: 100%;
-  padding: 10% 0;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
+footer{
+  background-color: #ffffff;
+  padding: 60px 60px 0px 60px;
 }
-footer > nav#footer-nav-links {
-  width: 100%;
-  position: relative;
+.footer-container{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 4% 4% 4%;
 }
-footer > nav#footer-nav-links > #border-bttm {
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
+.footer-logo{
+  width: 20%;
 }
-footer > nav#footer-nav-links ul.footer-nav-list {
-  width:360px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.footer-links{
+  width: 65%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
 }
-footer > nav#footer-nav-links ul.footer-nav-list li a {
-  font-family: "Nunito-700";
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: -0.015em;
-  color: #000000;
-  transition: all 0.4s ease;
-  text-decoration: none;
+.footer-links a{
+  font-family: 'Nunito-400';
+  color: #4D4D4D;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
-footer > nav#footer-nav-links ul.footer-nav-list li a:hover {
-  color: rgb(106, 176, 199);
-}
-footer > section#footer-others {
-  width: 100%;
-  padding-top: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-footer > section#footer-others > div#socials {
-  align-items: center;
-  display: flex;
-  width: auto;
-  margin: 5% 0 2% 0;
-}
-footer > section#footer-others > div#socials img {
-  border-radius: 50%;
-  background: #fff;
-  width: 44px;
+.socials{
+  width: 15%;
   height: auto;
-  margin-left: 4%;
-  padding: 10px 10px;
-  image-rendering: pixelated;
+  display: flex;
+  justify-content: space-between;
 }
-footer > section#footer-others > div#socials img:nth-child(2) {
-  margin: 0 16px;
+.socials img{
+  width: 27px;
+  height: 23px;
 }
-footer > section#footer-others > #copyright strong {
-  font-family: "Nunito-700";
+.copyright{
+  padding: 30px;
+  text-align: center;
+  font-family: 'Nunito-400';
+  font-size: 12px;
+  color: #2B2B2B;
+  margin-top: 50px;
 }
-footer > section#footer-others > #copyright {
-  width: auto;
-  font-family: "Nunito-400";
-  font-size: 15px;
-  line-height: 24px;
+.copyright i{
+  color: #ED4239;
 }
-@media screen and (max-width: 1200px) {
-  footer > nav#footer-nav-links ul.footer-nav-list {
-    width:300px;
+
+@media screen and (max-width: 1024px){
+  .footer-logo{
+    width: 23%;
   }
-  @media screen and (max-width: 1000px) {
-    footer > nav#footer-nav-links ul.footer-nav-list {
-      width:260px;
-    }
-    @media screen and (max-width: 850px) {
-      footer > nav#footer-nav-links ul.footer-nav-list {
-        width:220px;
-      }
-      footer > nav#footer-nav-links ul.footer-nav-list li a {
-        font-size: 13px;
-      }
-      @media screen and (max-width: 768px) {
-        footer > nav#footer-nav-links ul.footer-nav-list {
-          width: 198px;
-        }
-        footer > nav#footer-nav-links ul.footer-nav-list li a {
-          font-size: 12px;
-        }
-        @media screen and (max-width: 685px) {
-          footer {
-            padding: 0 0 15% 0;
-          }
-          footer > nav#footer-nav-links > #border-bttm {
-            width: 100%;
-            height: 1px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.3);
-          }
-          footer > nav#footer-nav-links {
-            align-items: flex-start;
-            justify-content: center;
-            column-gap: 15%;
-          }
-          footer > nav#footer-nav-links ul.footer-nav-list {
-            flex-direction: column;
-            margin-top: 120px;
-            height: 110px;
-            width: 150px;
-          }
-          #footer-logo {
-            top: 65px;  
-            left: 50%; 
-            transform: translate(-50%, -50%);
-            position: absolute;
-          }
-          footer > nav#footer-nav-links ul.footer-nav-list li a {
-            font-size: 16px;
-            font-family: "Inter-500";
-          }
-          footer > section#footer-others > div#socials {
-            margin: 65px 0 2% 0;
-          }
-          @media screen and (max-width: 428px) {
-            footer {
-              padding: 0 0 40% 0;
-            }
-            footer > section#footer-others > div#socials {
-              margin: 70px 0 2% 0;
-            }
-            section#footer-others > div#copyright {
-              display: none;
-            }
-          }
-        }
-      }
-    }
+  .footer-links{
+    width: 57%;
+    display: grid;
+    grid-template-columns: auto auto auto ;
   }
+  .socials{
+    width: 20%;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+  .footer-logo{
+    width: 27%;
+  }
+  .footer-links{
+    width: 48%;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .socials{
+    width: 25%;
+  }
+
+}
+@media screen and (max-width: 500px){
+  footer{
+    background-color: #ffffff;
+    padding: 60px 20px 0px 20px;
+  }
+  .footer-container{
+    display: block;
+  }
+  .footer-logo{
+    width: 100%;
+  }
+  .footer-links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 40px 0;
+    font-size: 14px;
+  }
+  .socials{
+    width: 70%;
+    margin: auto;
+  }
+
 }
